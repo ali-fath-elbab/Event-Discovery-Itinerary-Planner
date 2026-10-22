@@ -2,6 +2,9 @@
 
 ## Team Members
 - Ali Fath Elbab
+- Zeyad Mahmoud Elshayeb
+- Mazen Essam
+- Mohamed Idres
 
 ## Project Description
 Event Discovery Itinerary Planner helps users discover events and organize selected events into a practical itinerary.
