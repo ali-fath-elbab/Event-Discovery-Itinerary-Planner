@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ENTRADA - Premier live events, concerts, theater, and ticket discovery platform in Cairo & Egypt.">
+  <title>ENTRADA - Live Events & Ticket Discovery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../CSS/tailwind.generated.css">
+  
+  <link rel="stylesheet" href="../CSS/Home.css">
+</head>
+<body class="bg-[#FCFCFC] text-slate-900 antialiased selection:bg-amber-400 selection:text-slate-950 font-['Plus_Jakarta_Sans',sans-serif]">
+
+  <header class="w-full border-b border-gray-100 bg-white text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="font-medium text-slate-700">
+          <strong class="font-semibold text-slate-900">Cairo Live Season 2026:</strong> Over 45+ premier concerts, theater shows, and festivals now on sale.
+        </span>
+      </div>
+      <a href="All Events.html" class="inline-flex items-center gap-1 font-semibold text-slate-700 hover:text-amber-600 transition group">
+        <span>Explore Trending</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+      </a>
+    </div>
+  </header>
+
+  <nav class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-6">
+        <a href="Home.html" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-sm group-hover:bg-amber-500 transition">
+            <i class="fa-solid fa-ticket text-lg"></i>
+          </div>
+          <span class="text-xl font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+        </a>
+
+        <div class="hidden md:flex items-center relative w-72 lg:w-96">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400 text-xs"></i>
+          <input 
+            type="text" 
+            placeholder="Search events, artists, and venues..." 
+            class="w-full pl-10 pr-4 py-2.5 rounded-full bg-gray-50 border border-gray-200 text-xs text-slate-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:bg-white transition"
+          >
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 sm:gap-6">
+        <div class="hidden lg:flex items-center gap-6 text-xs font-semibold text-gray-600">
+          <a href="All Events.html" class="hover:text-slate-950 transition">Events</a>
+          <a href="#venues-section" class="hover:text-slate-950 transition">Outlets</a>
+          <a href="#footer-section" class="hover:text-slate-950 transition">Contact & Support</a>
+          <span class="text-gray-300">|</span>
+          <div class="flex items-center gap-1.5 cursor-pointer text-gray-500 hover:text-slate-950 transition">
+            <span>EN</span>
+            <span class="text-gray-300">/</span>
+            <span>AR</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <a 
+            href="DashBoard.html" 
+            class="px-5 py-2.5 rounded-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+            title="Go to Dashboard / Login"
+          >
+            <span>Login / Register</span>
+          </a>
+          <a 
+            href="DashBoard.html" 
+            class="w-9 h-9 rounded-full border border-gray-200 bg-white hover:bg-gray-50 flex items-center justify-center text-slate-700 transition"
+            title="User Profile & Dashboard"
+          >
+            <i class="fa-regular fa-user text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+
+    <section class="relative rounded-3xl bg-[#F8F9FA] border border-gray-200/80 p-6 md:p-10 lg:p-12 overflow-hidden shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-5 flex flex-col justify-center">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gray-200 text-[11px] font-bold text-gray-700 uppercase tracking-wider w-fit mb-6 shadow-2xs">
+            <i class="fa-solid fa-sparkles text-amber-500 text-xs"></i>
+            <span>FEATURED SPOTLIGHT</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-slate-950 tracking-tight leading-[1.15] mb-4">
+            Playcrowd: Vol. 02 At Teatro 90
+          </h1>
+
+          <div class="space-y-2 mb-6 text-xs sm:text-sm">
+            <div class="flex items-center gap-2.5 text-slate-700 font-semibold">
+              <i class="fa-regular fa-calendar text-gray-400 w-4"></i>
+              <span>Oct 23 | 08:00 PM</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-gray-500 font-medium">
+              <i class="fa-solid fa-location-dot text-gray-400 w-4"></i>
+              <span>Teatro 90, New Cairo</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-3 px-4 rounded-2xl bg-white border border-gray-200/80 w-fit mb-8 shadow-xs">
+            <div class="w-10 h-10 rounded-full bg-slate-100 border border-gray-200 flex items-center justify-center font-black text-slate-800 text-xs tracking-tighter">
+              90
+            </div>
+            <div>
+              <p class="text-[10px] font-bold uppercase tracking-wider text-gray-400">ORGANIZED BY</p>
+              <p class="text-xs font-bold text-slate-900">TEATRO 90</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <a 
+              href="DashBoard.html" 
+              class="px-7 py-3 rounded-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-sm transition active:scale-95"
+            >
+              <i class="fa-solid fa-ticket"></i>
+              <span>Book Now</span>
+            </a>
+            <a 
+              href="All Events.html" 
+              class="px-5 py-3 rounded-full text-slate-700 hover:text-slate-950 font-bold text-xs sm:text-sm inline-flex items-center gap-1.5 transition"
+            >
+              <span>More Info</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="relative rounded-3xl bg-white border border-gray-200/80 shadow-xl overflow-hidden group">
+            
+
+            <div class="relative aspect-[16/10] overflow-hidden bg-slate-900">
+              <img 
+                src="../assets/playcrowd-poster.jpg" 
+                alt="Playcrowd Vol. 02 Alaa El Sheikh Live at Teatro 90" 
+                class="w-full h-full object-cover"
+              >
+
+              <button class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg transition active:scale-90" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left text-xs"></i>
+              </button>
+              <button class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg transition active:scale-90" aria-label="Next">
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="flex items-end justify-between mb-6">
+        <div class="flex items-baseline gap-3">
+          <h2 class="text-2xl font-black text-slate-950 tracking-tight">Hot Events</h2>
+          <span class="hidden sm:inline text-xs font-medium text-gray-400">High demand performances & top bookings</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <a href="DashBoard.html" class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300">
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZEHpTciYn4uo5jkSMhchG45heV-9m1TqCzgrJj7MHd1QdpbjCyWHNQ9f88Z1C-0rwcpf-XqxFKba1ITL00iKLh1t3Qli1YF_hXFm-vkDR3ShEGvfFi20Z1x8yC5xoTHsd6Obg4udFFmgNKRjaGw6nFkg7l4tnORX7Iq_DKI6AACnrCIaIsbee4ifZe-nC97B2RHdOK5Ul2QxQIvPly0V4tzJAf4MQ0-5mC4nfG_kgGyGeegFkh3fe" 
+            alt="Amr Diab Live!" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+          
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] uppercase tracking-wider">
+              HOT
+            </span>
+          </div>
+
+          <div class="absolute bottom-3.5 left-3.5 right-3.5">
+            <h3 class="text-white font-extrabold text-base leading-snug group-hover:text-amber-400 transition">Amr Diab Live!</h3>
+            <p class="text-gray-300 text-xs font-medium mt-0.5">Dec 02 | Al Manara Arena</p>
+          </div>
+        </a>
+
+        <a href="DashBoard.html" class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300">
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5DR7c1gag-I9csRt2Sre7E0AvdMTcQxF_72OjGRZC68rIQamgbmWeTtL7FhUzNWvRjNdboZw9IGjtyWk9k2XONUl60Hc-rxEUPicpEZF_Rz0_ZdLwd0GBWDdEDwPb9MkVMO0Lef_o4Oe5vZnb-EspThq_UWOLqvhgKSt491QTh1bTJEjQYNwNrnPeOB5kB0fqDoxtr8rMkEx2sgIxGY1PlpoGrMNjgIYM8fWCz5B-dGTrmLKE4xga" 
+            alt="Fatma Said" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+          
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-black/70 backdrop-blur-md text-white border border-white/20 font-bold text-[10px] uppercase tracking-wider">
+              CLASSICAL
+            </span>
+          </div>
+
+          <div class="absolute bottom-3.5 left-3.5 right-3.5">
+            <h3 class="text-white font-extrabold text-base leading-snug group-hover:text-amber-400 transition">Fatma Said</h3>
+            <p class="text-gray-300 text-xs font-medium mt-0.5">Oct 22 | Grand Egyptian Museum</p>
+          </div>
+        </a>
+
+        <a href="DashBoard.html" class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300">
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-HCe7hKHDyNlGp4VrkgipERa9tnXxAeBGcRC0-Q4yvMfeSDLMlEHEAmdP4mxKgruVm_xkuku8lbQ-FdN_0iCx6rJfPzWb22QjNB0bTj4QY8NWyrwmXQUY7RD9hNZVfTPD0Ja3NnjcTX3_bCa849gZlLBG9z0EPCJuYZfWs-ytLj9Kriw_oHEyl_SLbwKPDV6-syEfA3mDLnGoO28e2f5_CAbPXbPw-ERoqo5ibHGwZ1nHH_J9HU1o" 
+            alt="20 Years of Ramy Sabry" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+          
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold text-[10px] uppercase tracking-wider">
+              EXCLUSIVE
+            </span>
+          </div>
+
+          <div class="absolute bottom-3.5 left-3.5 right-3.5">
+            <h3 class="text-white font-extrabold text-base leading-snug group-hover:text-amber-400 transition">20 Years of Ramy Sabry</h3>
+            <p class="text-gray-300 text-xs font-medium mt-0.5">Nov 10 | Cairo Arena</p>
+          </div>
+        </a>
+
+        <a href="DashBoard.html" class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300">
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtNntx__g9wyJ4_X9tmGueiB9Dr5M3h2iDuzeoOoAGcCj_FkZasWiCcc-tsEwuC-RuWSJKZO5wY97JHuk_z1z1JQToC-18sZn4FaiP44ZS2wk5q5LDojpRYjFPdr1YB3rkbUk3c3HGOdFhNU95NJE2RFHopNDVQwwzyajeCQfr9hbyydb_fTQJeMpfSA-WMAB5HDUNonaxTc6w_E9YPd-KM-JYifs3uumlYLOVL59MdeL5WybKoooR" 
+            alt="Cairo Jazz Festival 2026" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+          
+          <div class="absolute top-3 left-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] uppercase tracking-wider">
+              FESTIVAL
+            </span>
+          </div>
+
+          <div class="absolute bottom-3.5 left-3.5 right-3.5">
+            <h3 class="text-white font-extrabold text-base leading-snug group-hover:text-amber-400 transition">Cairo Jazz Festival 2026</h3>
+            <p class="text-gray-300 text-xs font-medium mt-0.5">Nov 01 - 04 | AUC Tahrir</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="flex items-end justify-between mb-5">
+        <div class="flex items-baseline gap-3">
+          <h2 class="text-2xl font-black text-slate-950 tracking-tight">Upcoming Events</h2>
+          <span class="hidden sm:inline text-xs font-medium text-gray-400">Reserve ahead for the most anticipated Cairo & Giza concerts</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-6">
+        <button class="px-4 py-2 rounded-full bg-slate-950 text-white font-bold text-xs whitespace-nowrap shadow-xs">
+          All Dates
+        </button>
+        <button class="px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-400 text-slate-700 font-semibold text-xs whitespace-nowrap transition">
+          Today
+        </button>
+        <button class="px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-400 text-slate-700 font-semibold text-xs whitespace-nowrap transition">
+          This Weekend
+        </button>
+        <button class="px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-400 text-slate-700 font-semibold text-xs whitespace-nowrap transition">
+          Standup Comedy
+        </button>
+        <button class="px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-400 text-slate-700 font-semibold text-xs whitespace-nowrap transition">
+          Live Music
+        </button>
+        <button class="px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-400 text-slate-700 font-semibold text-xs whitespace-nowrap transition">
+          Sports & Fitness
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtDuFvLfxVLxqx0CF5X65MFkd_e9q_Gj5S0Unx26-z2IXROM4b3WmKc5HQuTyA3tClZlhhM84Ffk6XP136T5ZQjP9Z_3PukEEFCYJX7mFBaKi9dvJsaHKLjhrC1SVMEBx4JU0X2MtUFCGSrTZN6sqM9n-wPeSOLLIWuuMGGvWtgezPUfqpUYTt3kc1VsyorY-MmyaQ4DLt4vZiMaz3pQ2k_tLj2MOpPGqLCRT13khx12lTDd4b_rlX" 
+              alt="Comedy Night With Jimmy & Friends" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 24
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                Comedy Night With Jimmy & Friends
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 24 | 09:00 PM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Cairo Jazz Club 610</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price: EGP 400</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO9eSfJA3wnpEjtOzQuURYt4AMy2q9FqjIs6-ZXTiOgOR-zWMYnfxKBn16PDwM6ryfcDvifkapvdieat5uLDCd0xCHV6Wm2cqccBzDn8I3huTDpblzMf6cxKpDiwxtysZEFmsSrIRzvvmnt4lAZ7jO4uVqf4fT5NxGY3p04z662p7A17s0kVWRGd4RYpfwpPF0cEnc507OI3k1OXYAtHxphOaLV9rPgGQVQ8ZwEhs61nkN1Mw2PcK3" 
+              alt="Teeenaty Band X Teatro 90" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 25
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                Teeenaty Band X Teatro 90
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 25 | 08:30 PM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Teatro 90</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price Range: EGP 450 – 650</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAojcEjnVjgDAsJR4LEbTkzCw3wg4gTigNflUL61oUAZebnWDUkVY_Wcqu3RSWNWkZQCrTrb8UtnVJmN4ojKwAWhNrwcgqS5oxVJaacgAIqnZxjFYgnEeg_r-pXxHTrwIgnKMAL4djUNuTW66rmepfKq8vMHW78pIfQGAc4fIIZqnxvVC3iNN8pJEGENcpm9C0MLqz0Xfgh8EAOXZkWVUipjlZ9mzScaa0Eq5lTE95iGLmMFBGRc9jC" 
+              alt="M Squared AlphaX Stadium 2026" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 26
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                M Squared AlphaX Stadium 2026
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 26 | 07:00 AM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Cairo Stadium Parking</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price: EGP 200</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800&auto=format&fit=crop" 
+              alt="TRT STANCE CAR SHOW" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 28
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                TRT STANCE CAR SHOW
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 28 | 03:00 PM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Al Rehab Park</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price: EGP 350</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_OeMjwIixKIUB46I62dLMtJPmyP389zb_3ZvbkTJ5ePvedAVb4tL-PuMX81IKugf7AP9meyQFETvyDjah_olZz3fk17bFaQ2_wTx6Fo4EHhM3m1H42R4qUQwg8qTl9euHiTJqHykLw8EC_Zkf_IsU1pqDfgdqkf3WpPd3RjlhEls9bIynfhKKgwkpu-gnXk8yU7fAmnHzcbEDGw1TLWPuJEiJauGJtC8_ibQ9ZUnq7YtTIyCLuuoP" 
+              alt="Fouad & Mounib" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 29
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                Fouad & Mounib
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 29 | 08:00 PM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Ewart Memorial Hall, AUC</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price Range: EGP 350 – 700</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-100">
+            <img 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0i7DTFRD1uxOsm7Rd5j5BY0UjFnbwW4fbw6TGdnNfny09hhLumQjlPWsjbEV0VJoyIqhktW8PnLLimfSeEAWV4aeERp1t4CwY9T8yHNJJyHb1LJd62OaG7f58ePfFG33pKImheY7_e2YhYxh8ZUwRX4EdG7pBeUYUcqlxQ1De34R5RcXlLDS1HfaVvXezXx8bpRQzgJ6cMjDxf7yPWWIc7bSIMiwVghjispqQBPIUmk4y9Sj7ix0i" 
+              alt="Fatma Said Gala Concert" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            >
+            <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-black text-slate-900 shadow-sm">
+              OCT 30
+            </span>
+          </div>
+
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-slate-950 text-base mb-1 group-hover:text-amber-500 transition leading-snug">
+                Fatma Said Gala Concert
+              </h3>
+              <p class="text-xs text-gray-400 font-medium mb-0.5">Oct 30 | 08:00 PM</p>
+              <p class="text-xs text-gray-500 font-medium mb-3">Grand Egyptian Museum</p>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Price Range: EGP 1,500 – 12,000</span>
+              </div>
+            </div>
+
+            <a 
+              href="DashBoard.html" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gray-50 group-hover:bg-amber-400 text-slate-700 group-hover:text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition duration-200"
+            >
+              <span>Select Tickets</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-8 flex justify-center">
+        <a 
+          href="All Events.html" 
+          class="px-6 py-2.5 rounded-full border border-gray-200 bg-white hover:bg-gray-50 text-slate-800 font-bold text-xs shadow-xs inline-flex items-center gap-2 transition"
+        >
+          <span>Show All Events</span>
+          <i class="fa-solid fa-chevron-down text-[10px]"></i>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex items-end justify-between mb-6">
+        <div class="flex items-baseline gap-3">
+          <h2 class="text-2xl font-black text-slate-950 tracking-tight">Explore Top Categories For Fun Things To Do</h2>
+          <span class="hidden sm:inline text-xs font-medium text-gray-400">Curated experiences categorized for effortless Cairo weekend plans</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=600&auto=format&fit=crop" 
+            alt="Nightlife" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Nightlife</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">12 Events</p>
+          </div>
+        </a>
+
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=600&auto=format&fit=crop" 
+            alt="Concerts" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Concerts</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">18 Events</p>
+          </div>
+        </a>
+
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=600&auto=format&fit=crop" 
+            alt="Comedy" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Comedy</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">14 Events</p>
+          </div>
+        </a>
+
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=600&auto=format&fit=crop" 
+            alt="Festival" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Festival</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">5 Events</p>
+          </div>
+        </a>
+
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=600&auto=format&fit=crop" 
+            alt="Art & Theatre" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Art & Theatre</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">10 Events</p>
+          </div>
+        </a>
+
+        <a href="All Events.html" class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-xs hover:shadow-lg transition-transform duration-300 hover:-translate-y-1">
+          <img 
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop" 
+            alt="Activities" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <div class="flex items-center justify-between text-white font-bold text-sm">
+              <span>Activities</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+            </div>
+            <p class="text-[11px] text-gray-300 font-medium">8 Events</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="venues-section">
+      <div class="flex items-end justify-between mb-6">
+        <div class="flex items-baseline gap-3">
+          <h2 class="text-2xl font-black text-slate-950 tracking-tight">Venues</h2>
+          <span class="hidden sm:inline text-xs font-medium text-gray-400">Explore top Egyptian performance halls & arenas</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 text-xs transition" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer">
+          <img 
+            src="https://images.unsplash.com/photo-1514306191717-452ec28c7814?q=80&w=800&auto=format&fit=crop" 
+            alt="Al Anfoushy Theater" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute bottom-0 inset-x-0 bg-slate-950/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between text-white font-bold text-xs sm:text-sm">
+            <span>Al Anfoushy Theater</span>
+            <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer">
+          <img 
+            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop" 
+            alt="Al Manara Arena" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute bottom-0 inset-x-0 bg-slate-950/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between text-white font-bold text-xs sm:text-sm">
+            <span>Al Manara Arena</span>
+            <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer">
+          <img 
+            src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop" 
+            alt="Al Manara Main Hall" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute bottom-0 inset-x-0 bg-slate-950/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between text-white font-bold text-xs sm:text-sm">
+            <span>Al Manara Main Hall</span>
+            <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden aspect-[16/11] bg-slate-950 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer">
+          <img 
+            src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=800&auto=format&fit=crop" 
+            alt="AUC Tahrir Square" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+          <div class="absolute bottom-0 inset-x-0 bg-slate-950/90 backdrop-blur-sm px-4 py-3 flex items-center justify-between text-white font-bold text-xs sm:text-sm">
+            <span>AUC Tahrir Square</span>
+            <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-amber-400 group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="relative rounded-3xl bg-gradient-to-b from-[#FFFDF5] via-[#FFF9E6] to-[#FEF0C7]/80 p-10 sm:p-14 md:p-16 text-center border border-amber-200/60 shadow-xs overflow-hidden">
+      
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative w-14 h-14 rounded-full bg-white shadow-sm border border-amber-200/80 flex items-center justify-center mx-auto mb-5 text-slate-800">
+        <i class="fa-regular fa-user text-xl"></i>
+      </div>
+
+      <h2 class="relative text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight mb-3">
+        Login Or Signup To Gain Additional Benefits
+      </h2>
+
+      <p class="relative text-xs sm:text-sm text-gray-600 max-w-xl mx-auto leading-relaxed mb-8">
+        Get your own personal profile, follow artists you love, store your e-tickets safely, and receive exclusive priority access to hot Cairo events.
+      </p>
+
+      <div class="relative">
+        <a 
+          href="DashBoard.html" 
+          class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white hover:bg-slate-950 hover:text-white text-slate-950 font-bold text-xs sm:text-sm border border-gray-200 shadow-sm transition-all duration-200 active:scale-95"
+        >
+          <span>Login / Signup</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer-section" class="w-full border-t border-gray-100 bg-white pt-16 pb-12 mt-16 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-xs">
+              <i class="fa-solid fa-ticket text-sm"></i>
+            </div>
+            <span class="text-lg font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed max-w-sm">
+            Your premier ticketing destination for live concerts, theater, sports, and cultural entertainment.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Tickets on Sale</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">All Tickets on Sale</a></li>
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">Hot Events</a></li>
+            <li><a href="#venues-section" class="hover:text-slate-950 transition">Outlets</a></li>
+            <li><a href="#venues-section" class="hover:text-slate-950 transition">Venues</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Company</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#" class="hover:text-slate-950 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Contact Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Careers</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Policies</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-4">
+          <div class="p-5 rounded-2xl bg-gray-50/80 border border-gray-100">
+            <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase mb-1">Need some help?</h4>
+            <p class="text-xs text-gray-500 mb-4">Contact our team anytime for dedicated ticket assistance.</p>
+            
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <a href="tel:16826" class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-phone text-emerald-600"></i>
+                <span>Call Center</span>
+              </a>
+              <a href="#" class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-comments text-amber-600"></i>
+                <span>Live Chat</span>
+              </a>
+            </div>
+
+            <div class="flex items-center gap-2 pt-2 border-t border-gray-200/60">
+              <a href="#" class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition" aria-label="Website">
+                <i class="fa-solid fa-globe text-xs"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition" aria-label="Instagram">
+                <i class="fa-brands fa-instagram text-xs"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok text-xs"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition" aria-label="Facebook">
+                <i class="fa-brands fa-facebook text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <p>© ENTRADA 2026 - All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-700 transition">Privacy</a>
+          <a href="#" class="hover:text-slate-700 transition">Terms</a>
+          <a href="#" class="hover:text-slate-700 transition">Support</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
