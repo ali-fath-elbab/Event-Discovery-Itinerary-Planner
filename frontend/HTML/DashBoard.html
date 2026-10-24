@@ -6,27 +6,21 @@
   <meta name="description" content="ENTRADA Dashboard - Manage booked cultural itineraries, ticket passes, live events, and exclusive seasonal perks.">
   <title>Dashboard | ENTRADA - Live Events & Ticket Discovery</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Generated Tailwind CSS -->
   <link rel="stylesheet" href="../CSS/tailwind.generated.css">
   
-  <!-- Custom Page Styles -->
   <link rel="stylesheet" href="../CSS/Home.css">
 </head>
 <body class="bg-[#FCFCFC] text-slate-900 antialiased selection:bg-amber-400 selection:text-slate-950 font-['Plus_Jakarta_Sans',sans-serif]">
 
-  <!-- Top Navigation Bar Matching Reference -->
   <nav class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
-      <!-- Brand Logo & Search -->
       <div class="flex items-center gap-6">
         <a href="Home.html" class="flex items-center gap-2.5 group">
           <div class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-xs group-hover:bg-amber-500 transition">
@@ -35,7 +29,6 @@
           <span class="text-xl font-extrabold tracking-tight text-slate-950">ENTRADA</span>
         </a>
 
-        <!-- Search Bar -->
         <div class="hidden md:flex items-center relative w-72 lg:w-80">
           <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400 text-xs"></i>
           <input 
@@ -46,7 +39,6 @@
         </div>
       </div>
 
-      <!-- Navigation Links & Profile Actions -->
       <div class="flex items-center gap-3 sm:gap-5">
         <div class="flex items-center gap-2 sm:gap-4 text-xs font-semibold text-gray-600">
           <a href="Home.html" class="px-3.5 py-1.5 rounded-full bg-amber-400 text-slate-950 font-bold transition hover:bg-amber-500 shadow-xs">Home</a>
@@ -61,7 +53,6 @@
           </div>
         </div>
 
-        <!-- Login / Register & User Icon -->
         <div class="flex items-center gap-2.5">
           <a 
             href="DashBoard.html" 
@@ -84,13 +75,10 @@
     </div>
   </nav>
 
-  <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
 
-    <!-- Breadcrumb & Greeting Header -->
     <header class="space-y-4">
       
-      <!-- Breadcrumb -->
       <nav class="flex items-center gap-2 text-xs text-gray-400 font-medium" aria-label="Breadcrumb">
         <a href="Home.html" class="hover:text-slate-800 transition">Home</a>
         <i class="fa-solid fa-chevron-right text-[10px] text-gray-300"></i>
@@ -99,10 +87,8 @@
         <span class="text-slate-900 font-bold" aria-current="page">Dashboard</span>
       </nav>
 
-      <!-- Welcome Title & Action Buttons Row -->
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
         
-        <!-- Left: Heading & Status -->
         <div>
           <div class="flex flex-wrap items-center gap-3">
             <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-950 tracking-tight">
@@ -118,7 +104,6 @@
           </p>
         </div>
 
-        <!-- Right: Action Buttons -->
         <div class="flex items-center gap-3 shrink-0">
           <button type="button" class="px-4 py-2 rounded-full border border-gray-200 bg-white hover:bg-gray-50 text-slate-800 font-bold text-xs flex items-center gap-2 shadow-xs transition active:scale-95">
             <i class="fa-solid fa-plus text-xs text-gray-500"></i>
@@ -134,11 +119,9 @@
 
     </header>
 
-    <!-- Quick Stats Cards (4 Cards Grid) -->
     <section aria-label="Account Overview Statistics">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
-        <!-- Stat Card 1 -->
         <div class="bg-white rounded-2xl border border-gray-100 p-5 shadow-xs flex flex-col justify-between">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold text-gray-500">Upcoming Events</span>
@@ -155,7 +138,6 @@
           </div>
         </div>
 
-        <!-- Stat Card 2 -->
         <div class="bg-white rounded-2xl border border-gray-100 p-5 shadow-xs flex flex-col justify-between">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold text-gray-500">Saved Events</span>
@@ -172,7 +154,6 @@
           </div>
         </div>
 
-        <!-- Stat Card 3 -->
         <div class="bg-white rounded-2xl border border-gray-100 p-5 shadow-xs flex flex-col justify-between">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold text-gray-500">Total Ticket Spending</span>
@@ -190,7 +171,6 @@
           </div>
         </div>
 
-        <!-- Stat Card 4 -->
         <div class="bg-white rounded-2xl border border-gray-100 p-5 shadow-xs flex flex-col justify-between">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold text-gray-500">Upcoming This Month</span>
@@ -210,29 +190,23 @@
       </div>
     </section>
 
-    <!-- Visual Analytics Section (2 Side-by-Side Cards) -->
     <section class="grid grid-cols-1 lg:grid-cols-12 gap-6" aria-label="Event Attendance Analytics">
       
-      <!-- Left Card: Events Attended Over Time (7 cols) -->
       <div class="lg:col-span-7 bg-white rounded-3xl border border-gray-100 p-6 sm:p-7 shadow-xs flex flex-col justify-between">
         
-        <!-- Header -->
         <div class="flex items-start justify-between mb-6">
           <div>
             <h2 class="text-lg font-bold text-slate-950">Events Attended Over Time</h2>
             <p class="text-xs text-gray-400 font-medium">Attendance activity and ticket volume throughout 2026</p>
           </div>
-          <!-- Year Selector -->
           <div class="flex items-center bg-gray-100/80 p-0.5 rounded-full text-[10px] font-bold text-gray-500">
             <button type="button" class="px-2.5 py-1 rounded-full text-gray-400 hover:text-slate-800 transition">2025</button>
             <button type="button" class="px-2.5 py-1 rounded-full bg-white text-slate-950 shadow-xs">2026</button>
           </div>
         </div>
 
-        <!-- SVG Line Chart with Gradient and Tooltip -->
         <div class="relative w-full aspect-[2/1] min-h-[220px]">
           
-          <!-- Interactive Tooltip Overlay at October Peak -->
           <div class="absolute z-10 left-[78%] top-[12%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-none">
             <div class="bg-slate-950 text-white px-3 py-1.5 rounded-xl shadow-lg border border-slate-800 text-center whitespace-nowrap">
               <div class="flex items-center justify-center gap-1 text-[9px] font-black uppercase text-amber-400 tracking-wider">
@@ -241,13 +215,11 @@
               </div>
               <p class="text-[11px] font-bold text-white mt-0.5">4 Events • EGP 2,160</p>
             </div>
-            <!-- Arrow pointer -->
             <div class="w-2 h-2 bg-slate-950 rotate-45 mx-auto -mt-1 border-r border-b border-slate-800"></div>
           </div>
 
           <svg class="w-full h-full overflow-visible" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <!-- Amber Fill Gradient -->
               <linearGradient id="amberCurveGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.38"/>
                 <stop offset="60%" stop-color="#FBBF24" stop-opacity="0.12"/>
@@ -255,26 +227,20 @@
               </linearGradient>
             </defs>
 
-            <!-- Horizontal Background Guide Lines & Y-axis labels -->
             <g class="text-[10px] fill-gray-300 font-medium">
-              <!-- Y: 6 -->
               <line x1="40" y1="30" x2="580" y2="30" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
               <text x="22" y="34" text-anchor="middle">6</text>
 
-              <!-- Y: 4 -->
               <line x1="40" y1="85" x2="580" y2="85" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
               <text x="22" y="89" text-anchor="middle">4</text>
 
-              <!-- Y: 2 -->
               <line x1="40" y1="145" x2="580" y2="145" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3"/>
               <text x="22" y="149" text-anchor="middle">2</text>
 
-              <!-- Y: 0 -->
               <line x1="40" y1="205" x2="580" y2="205" stroke="#E2E8F0" stroke-width="1"/>
               <text x="22" y="209" text-anchor="middle">0</text>
             </g>
 
-            <!-- Area Fill Under Curve -->
             <path 
               d="M 50 170 
                  C 90 160, 110 145, 145 145 
@@ -287,7 +253,6 @@
               fill="url(#amberCurveGrad)"
             />
 
-            <!-- Main Amber Smooth Curve Line -->
             <path 
               d="M 50 170 
                  C 90 160, 110 145, 145 145 
@@ -302,21 +267,19 @@
               stroke-linejoin="round"
             />
 
-            <!-- Data Point Circles on Curve -->
-            <!-- Jan --> <circle cx="50" cy="170" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Feb --> <circle cx="95" cy="155" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Mar --> <circle cx="145" cy="145" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Apr --> <circle cx="190" cy="132" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- May --> <circle cx="235" cy="125" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Jun --> <circle cx="280" cy="140" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Jul --> <circle cx="325" cy="155" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Aug --> <circle cx="370" cy="130" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Sep --> <circle cx="420" cy="95" r="4" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Oct (Peak) --> <circle cx="475" cy="70" r="6" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2.5" class="animate-pulse"/>
-            <!-- Nov --> <circle cx="515" cy="130" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Dec --> <circle cx="565" cy="120" r="4" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="50" cy="170" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="95" cy="155" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
+            <circle cx="145" cy="145" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="190" cy="132" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
+            <circle cx="235" cy="125" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="280" cy="140" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
+            <circle cx="325" cy="155" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="370" cy="130" r="3" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.5"/>
+            <circle cx="420" cy="95" r="4" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="475" cy="70" r="6" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2.5" class="animate-pulse"/>
+            <circle cx="515" cy="130" r="3.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+            <circle cx="565" cy="120" r="4" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
 
-            <!-- Month Labels on X-axis -->
             <g class="text-[10px] fill-gray-400 font-semibold" text-anchor="middle">
               <text x="50" y="224">Jan</text>
               <text x="95" y="224">Feb</text>
@@ -335,7 +298,6 @@
 
         </div>
 
-        <!-- Bottom Summary Bar Inside Card -->
         <div class="mt-6 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <div class="flex items-center gap-2 text-slate-700">
             <span class="w-6 h-6 rounded-md bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs">
@@ -351,47 +313,36 @@
 
       </div>
 
-      <!-- Right Card: Events by Category (5 cols) -->
       <div class="lg:col-span-5 bg-white rounded-3xl border border-gray-100 p-6 sm:p-7 shadow-xs flex flex-col justify-between">
         
-        <!-- Header -->
         <div class="mb-4">
           <h2 class="text-lg font-bold text-slate-950">Events by Category</h2>
           <p class="text-xs text-gray-400 font-medium">Distribution of your cultural taste & bookings</p>
         </div>
 
-        <!-- Donut Chart & Category Breakdown Row -->
         <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center my-auto py-2">
           
-          <!-- Circular Donut SVG Chart (5 cols) -->
           <div class="sm:col-span-6 flex justify-center">
             <div class="relative w-44 h-44">
               <svg class="w-full h-full -rotate-90" viewBox="0 0 160 160">
-                <!-- Outer background circle track -->
                 <circle cx="80" cy="80" r="60" stroke="#F8FAFC" stroke-width="18" fill="none" />
                 
-                <!-- 1. Comedy: 39% (Length = 377 * 0.39 = 147) -->
                 <circle cx="80" cy="80" r="60" stroke="#F59E0B" stroke-width="18" fill="none"
                         stroke-dasharray="147 377" stroke-dashoffset="0" stroke-linecap="round" />
 
-                <!-- 2. Concerts: 29% (Length = 377 * 0.29 = 109) -->
                 <circle cx="80" cy="80" r="60" stroke="#10B981" stroke-width="18" fill="none"
                         stroke-dasharray="109 377" stroke-dashoffset="-147" stroke-linecap="round" />
 
-                <!-- 3. Festivals: 19% (Length = 377 * 0.19 = 71) -->
                 <circle cx="80" cy="80" r="60" stroke="#06B6D4" stroke-width="18" fill="none"
                         stroke-dasharray="71 377" stroke-dashoffset="-256" stroke-linecap="round" />
 
-                <!-- 4. Art & Theatre: 11% (Length = 377 * 0.11 = 41) -->
                 <circle cx="80" cy="80" r="60" stroke="#8B5CF6" stroke-width="18" fill="none"
                         stroke-dasharray="41 377" stroke-dashoffset="-327" stroke-linecap="round" />
 
-                <!-- 5. Sports & Fitness: 5% (Length = 377 * 0.05 = 19) -->
                 <circle cx="80" cy="80" r="60" stroke="#F97316" stroke-width="18" fill="none"
                         stroke-dasharray="19 377" stroke-dashoffset="-368" stroke-linecap="round" />
               </svg>
 
-              <!-- Donut Center Text -->
               <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
                 <span class="text-3xl font-extrabold text-slate-950 tracking-tight leading-none">24</span>
                 <span class="text-[9px] font-bold uppercase tracking-wider text-gray-400 mt-1">TOTAL EVENTS</span>
@@ -399,7 +350,6 @@
             </div>
           </div>
 
-          <!-- Legend List on Right (6 cols) -->
           <div class="sm:col-span-6 space-y-2.5 text-xs">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
@@ -444,7 +394,6 @@
 
         </div>
 
-        <!-- Bottom Note -->
         <div class="mt-6 pt-4 border-t border-gray-100 text-center sm:text-left text-xs text-gray-500">
           <span>Top preference: <strong class="text-slate-900 font-bold">Standup & Improv Shows</strong></span>
         </div>
@@ -453,10 +402,8 @@
 
     </section>
 
-    <!-- "Your Upcoming Events" Section -->
     <section class="space-y-4">
       
-      <!-- Section Header -->
       <div class="flex items-end justify-between">
         <div>
           <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Your Upcoming Events</h2>
@@ -468,32 +415,25 @@
         </a>
       </div>
 
-      <!-- Booking Ticket Cards Stack -->
       <div class="space-y-4">
         
-        <!-- Ticket Card 1: Playcrowd: Vol. 02 at Teatro 90 -->
         <article class="bg-white rounded-2xl border border-gray-200/90 shadow-xs overflow-hidden flex flex-col lg:flex-row relative group hover:shadow-md transition-shadow">
-          <!-- Left Amber Indicator Stripe -->
           <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-400"></div>
 
-          <!-- Thumbnail Image on Left -->
           <div class="relative w-full lg:w-64 h-48 lg:h-auto shrink-0 overflow-hidden bg-slate-900 pl-1.5">
             <img 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmaCwEnLTnN8tJeKTLgpeMsgueRfsBtU-ki-ST5yFl7EWTq6BOzb6GNqG-QjzxWM_BqJO0OonAPFuS15Tb4Nb5o_v6wCuENXSXw5nAUzDxugZeB8DOaairAcneFoUSwwXUwBX4UZTikiIDf_w_2zWByvEFWIcoMhqfsyORJhZ0FjjEFvtnRe9_BFn-sHw-RdpM-eDihkf-6QCY9196-2J2FniT5RVxkV8otqX3JibdSsyW1piltDnU" 
               alt="Playcrowd: Vol. 02 at Teatro 90" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             >
-            <!-- Date badge on image -->
             <div class="absolute top-3 left-4 flex items-center gap-1 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md text-white text-[10px] font-bold">
               <i class="fa-regular fa-calendar text-[9px] text-amber-400"></i>
               <span>Oct 23</span>
             </div>
           </div>
 
-          <!-- Middle Ticket Content -->
           <div class="flex-1 p-5 lg:p-6 flex flex-col justify-between">
             <div>
-              <!-- Booking Status Pill & Code -->
               <div class="flex flex-wrap items-center gap-2.5 mb-2">
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-bold">
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -502,10 +442,8 @@
                 <span class="text-xs text-gray-400 font-medium">• Booking #ENT-89210</span>
               </div>
 
-              <!-- Event Title -->
               <h3 class="text-lg font-bold text-slate-950 mb-1.5">Playcrowd: Vol. 02 at Teatro 90</h3>
 
-              <!-- Time & Location -->
               <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500 font-medium mb-4">
                 <div class="flex items-center gap-1.5">
                   <i class="fa-regular fa-clock text-gray-400"></i>
@@ -518,7 +456,6 @@
               </div>
             </div>
 
-            <!-- Soft Details Table -->
             <div class="grid grid-cols-3 gap-3 p-3 rounded-xl bg-gray-50/80 border border-gray-100 text-xs">
               <div>
                 <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Ticket Tier</span>
@@ -535,7 +472,6 @@
             </div>
           </div>
 
-          <!-- Right Action Buttons Column -->
           <div class="p-5 lg:p-6 lg:border-l border-gray-100 flex flex-col justify-center gap-2.5 min-w-[200px] shrink-0 bg-gray-50/40 lg:bg-transparent">
             <button type="button" class="w-full py-2.5 px-4 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition active:scale-95">
               <i class="fa-solid fa-qrcode"></i>
@@ -553,29 +489,23 @@
 
         </article>
 
-        <!-- Ticket Card 2: Fatma Said Gala Concert -->
         <article class="bg-white rounded-2xl border border-gray-200/90 shadow-xs overflow-hidden flex flex-col lg:flex-row relative group hover:shadow-md transition-shadow">
-          <!-- Left Amber Indicator Stripe -->
           <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-400"></div>
 
-          <!-- Thumbnail Image on Left -->
           <div class="relative w-full lg:w-64 h-48 lg:h-auto shrink-0 overflow-hidden bg-slate-900 pl-1.5">
             <img 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5DR7c1gag-I9csRt2Sre7E0AvdMTcQxF_72OjGRZC68rIQamgbmWeTtL7FhUzNWvRjNdboZw9IGjtyWk9k2XONUl60Hc-rxEUPicpEZF_Rz0_ZdLwd0GBWDdEDwPb9MkVMO0Lef_o4Oe5vZnb-EspThq_UWOLqvhgKSt491QTh1bTJEjQYNwNrnPeOB5kB0fqDoxtr8rMkEx2sgIxGY1PlpoGrMNjgIYM8fWCz5B-dGTrmLKE4xga" 
               alt="Fatma Said Gala Concert" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             >
-            <!-- Date badge on image -->
             <div class="absolute top-3 left-4 flex items-center gap-1 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md text-white text-[10px] font-bold">
               <i class="fa-regular fa-calendar text-[9px] text-amber-400"></i>
               <span>Oct 22</span>
             </div>
           </div>
 
-          <!-- Middle Ticket Content -->
           <div class="flex-1 p-5 lg:p-6 flex flex-col justify-between">
             <div>
-              <!-- Booking Status Pill & Code -->
               <div class="flex flex-wrap items-center gap-2.5 mb-2">
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-bold">
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -584,10 +514,8 @@
                 <span class="text-xs text-gray-400 font-medium">• Booking #ENT-77341</span>
               </div>
 
-              <!-- Event Title -->
               <h3 class="text-lg font-bold text-slate-950 mb-1.5">Fatma Said Gala Concert</h3>
 
-              <!-- Time & Location -->
               <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500 font-medium mb-4">
                 <div class="flex items-center gap-1.5">
                   <i class="fa-regular fa-clock text-gray-400"></i>
@@ -600,7 +528,6 @@
               </div>
             </div>
 
-            <!-- Soft Details Table -->
             <div class="grid grid-cols-3 gap-3 p-3 rounded-xl bg-gray-50/80 border border-gray-100 text-xs">
               <div>
                 <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Ticket Tier</span>
@@ -617,7 +544,6 @@
             </div>
           </div>
 
-          <!-- Right Action Buttons Column -->
           <div class="p-5 lg:p-6 lg:border-l border-gray-100 flex flex-col justify-center gap-2.5 min-w-[200px] shrink-0 bg-gray-50/40 lg:bg-transparent">
             <button type="button" class="w-full py-2.5 px-4 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition active:scale-95">
               <i class="fa-solid fa-ticket"></i>
@@ -639,10 +565,8 @@
 
     </section>
 
-    <!-- "Saved Events & Watchlist" Section -->
     <section class="space-y-4">
       
-      <!-- Section Header -->
       <div class="flex items-end justify-between">
         <div>
           <h2 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Saved Events & Watchlist</h2>
@@ -654,10 +578,8 @@
         </a>
       </div>
 
-      <!-- 3 Saved Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Saved Card 1: Ghostly Kisses Live in Cairo -->
         <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
           <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-900">
             <img 
@@ -665,11 +587,9 @@
               alt="Ghostly Kisses Live in Cairo" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             >
-            <!-- Date badge on left -->
             <span class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-white shadow-xs">
               Nov 11, 2026
             </span>
-            <!-- Heart icon on right -->
             <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/95 backdrop-blur-md text-red-500 hover:bg-white flex items-center justify-center text-xs shadow-xs transition" aria-label="Remove from Watchlist">
               <i class="fa-solid fa-heart"></i>
             </button>
@@ -700,7 +620,6 @@
           </div>
         </div>
 
-        <!-- Saved Card 2: Omar Khairat & Symphony -->
         <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
           <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-900">
             <img 
@@ -708,11 +627,9 @@
               alt="Omar Khairat & Symphony" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             >
-            <!-- Date badge on left -->
             <span class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-white shadow-xs">
               Nov 22, 2026
             </span>
-            <!-- Heart icon on right -->
             <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/95 backdrop-blur-md text-red-500 hover:bg-white flex items-center justify-center text-xs shadow-xs transition" aria-label="Remove from Watchlist">
               <i class="fa-solid fa-heart"></i>
             </button>
@@ -743,7 +660,6 @@
           </div>
         </div>
 
-        <!-- Saved Card 3: Cairo Jazz Festival 2026 -->
         <div class="bg-white rounded-3xl border border-gray-200/80 p-4 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col group">
           <div class="relative rounded-2xl overflow-hidden aspect-[16/10] mb-4 bg-slate-900">
             <img 
@@ -751,11 +667,9 @@
               alt="Cairo Jazz Festival 2026" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             >
-            <!-- Date badge on left -->
             <span class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md text-[10px] font-bold text-white shadow-xs">
               Dec 04, 2026
             </span>
-            <!-- Heart icon on right -->
             <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/95 backdrop-blur-md text-red-500 hover:bg-white flex items-center justify-center text-xs shadow-xs transition" aria-label="Remove from Watchlist">
               <i class="fa-solid fa-heart"></i>
             </button>
@@ -790,7 +704,6 @@
 
     </section>
 
-    <!-- VIP Concierge / Transport Banner -->
     <section class="bg-white rounded-2xl border border-gray-200/90 p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-5">
       <div class="flex items-center gap-4">
         <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/70 flex items-center justify-center text-amber-600 text-lg shrink-0">
@@ -813,14 +726,11 @@
 
   </main>
 
-  <!-- Global Footer Matching Dashboard Reference Exactly -->
   <footer class="w-full border-t border-gray-100 bg-white pt-16 pb-12 mt-16 text-xs text-gray-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Top Columns Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
         
-        <!-- Col 1: Tickets on Sale (3 cols) -->
         <div class="lg:col-span-3 space-y-3">
           <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Tickets on Sale</h4>
           <ul class="space-y-2 text-xs">
@@ -832,7 +742,6 @@
           </ul>
         </div>
 
-        <!-- Col 2: Company (3 cols) -->
         <div class="lg:col-span-3 space-y-3">
           <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Company</h4>
           <ul class="space-y-2 text-xs">
@@ -844,7 +753,6 @@
           </ul>
         </div>
 
-        <!-- Col 3: Support & Help (3 cols) -->
         <div class="lg:col-span-3 space-y-3">
           <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Support & Help</h4>
           <ul class="space-y-2 text-xs">
@@ -856,13 +764,11 @@
           </ul>
         </div>
 
-        <!-- Col 4: Need Quick Help? (3 cols) -->
         <div class="lg:col-span-3 space-y-4">
           <div class="p-5 rounded-2xl bg-gray-50/80 border border-gray-100">
             <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase mb-1">Need Quick Help?</h4>
             <p class="text-[11px] text-gray-500 mb-3">Official Call Center & Assistance</p>
             
-            <!-- Hotline Phone Pill -->
             <div class="flex items-center gap-3 p-2.5 rounded-xl bg-amber-400 text-slate-950 mb-2.5 shadow-xs">
               <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
                 <i class="fa-solid fa-phone text-xs"></i>
@@ -882,7 +788,6 @@
 
       </div>
 
-      <!-- Bottom Sub-bar -->
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
         <p>© 2026 ENTRADA Ticketing Solutions. All rights reserved.</p>
         <div class="flex items-center gap-4 text-[11px] font-medium text-slate-600">
