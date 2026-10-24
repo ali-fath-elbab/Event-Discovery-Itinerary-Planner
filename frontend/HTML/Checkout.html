@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../../dist/output.css" />
+</head>
+
+<body class="bg-canvas-bg font-body-md text-body-md text-text-primary min-h-screen">
+    <header
+        class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm"
+                    data-path="home" href="#"><img alt="ENTRADA Wordmark Logo" class="h-8 w-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1X_gyeBe1oeq-6KPkHxcwFH2kQMQm_Xs8jGQZ6hRw2iYLSP8533TghA0h7y4DWWkW-pfjR7pBRq6OHqwJ81RJmy-YnuuPXiTZy2X8XKRl4peROGnXANLrj_2w5GdV36F_lr0otSA1pP-txY8EbBbLmi9Xyw1f4mxEgJJ0pxYHxnZii8jBFUpx06wfiR6MJDEoW8PRHc6BVX7X8ri3r3VUGK-EIBPrScTbW4ySxhO0a8nl5HZaw7Nc64Xg" /><span
+                        class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-extrabold hidden sm:inline-block">ENTRADA</span></a>
+            </div>
+            <div class="flex-1 max-w-md hidden md:block">
+                <div class="relative flex items-center"><span
+                        class="material-symbols-outlined absolute left-4 text-text-muted text-[20px] pointer-events-none">search</span><input
+                        class="w-full pl-11 pr-4 py-2.5 rounded-full bg-surface-subtle border-0 text-text-primary font-body-sm text-body-sm placeholder:text-text-muted focus:ring-2 focus:ring-primary-container focus:bg-surface-card transition-all outline-none"
+                        placeholder="Search events, artists, and venues..." type="search" /></div>
+            </div>
+            <div class="flex items-center gap-space-md flex-shrink-0">
+                <nav class="hidden lg:flex items-center gap-6"
+                    data-active-classes="font-bold text-text-primary underline decoration-primary-container decoration-2 underline-offset-8">
+                    <a class="font-label-md text-label-md text-text-muted hover:text-text-primary transition-colors"
+                        data-path="home" href="#">Home</a>
+                    <a class="font-label-md text-label-md text-text-muted hover:text-text-primary transition-colors"
+                        data-path="events" href="#">Events</a>
+                    <a class="font-label-md text-label-md text-text-muted hover:text-text-primary transition-colors"
+                        data-path="outlets" href="#">Outlets</a>
+                    <a class="font-label-md text-label-md text-text-muted hover:text-text-primary transition-colors"
+                        data-path="contact" href="#">Support &amp; Contact</a>
+                </nav>
+
+                <div
+                    class="hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-subtle text-text-primary font-label-sm text-label-sm cursor-pointer hover:bg-surface-variant transition-colors">
+                    <span class="font-bold">EN</span>
+                    <span class="text-text-muted">/</span>
+                    <span>FR</span>
+                    <span class="text-text-muted">/</span>
+                    <span>AR</span>
+                </div>
+
+                <a class="flex items-center justify-center px-5 py-2.5 rounded-full bg-primary-container text-text-primary font-label-md text-label-md font-bold hover:brightness-95 transition-all shadow-sm"
+                    data-path="checkout" href="#">Login / Register</a>
+
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-canvas-bg min-h-[calc(100vh-80px)]">
+        <div class="flex flex-col w-full">
+            <!-- Interactive Timer & Checkout Stepper Progress Strip -->
+            <section
+                class="w-full bg-surface-card shadow-[0_4px_20px_-2px_rgba(16,24,40,0.03)] border-b-0 py-space-md mb-space-lg">
+                <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-space-md">
+                        <!-- Multi-Step Flow Indicator -->
+                        <nav aria-label="Checkout Progress"
+                            class="flex items-center gap-2 sm:gap-4 overflow-x-auto w-full lg:w-auto py-1">
+                            <!-- Step 1: Completed -->
+                            <div class="flex items-center gap-2.5 flex-shrink-0">
+                                <span
+                                    class="w-7 h-7 rounded-full bg-status-available text-on-primary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+                                    <span class="material-symbols-outlined text-[16px]">check</span>
+                                </span>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Step
+                                        1</span>
+                                    <span class="font-label-md text-label-md text-text-primary font-bold">Ticket
+                                        Selection</span>
+                                </div>
+                            </div>
+                            <span class="w-6 sm:w-10 h-0.5 bg-status-available/40 flex-shrink-0"></span>
+                            <!-- Step 2: Active -->
+                            <div class="flex items-center gap-2.5 flex-shrink-0">
+                                <span
+                                    class="w-7 h-7 rounded-full bg-primary-container text-text-primary flex items-center justify-center font-label-sm text-label-sm font-bold ring-4 ring-primary-container/20 shadow-sm">
+                                    2
+                                </span>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Active</span>
+                                    <span class="font-label-md text-label-md text-text-primary font-bold">Customer
+                                        Info</span>
+                                </div>
+                            </div>
+                            <span class="w-6 sm:w-10 h-0.5 bg-border-subtle flex-shrink-0"></span>
+                            <!-- Step 3: Upcoming -->
+                            <div class="flex items-center gap-2.5 flex-shrink-0 opacity-60">
+                                <span
+                                    class="w-7 h-7 rounded-full bg-surface-subtle text-text-muted flex items-center justify-center font-label-sm text-label-sm">
+                                    3
+                                </span>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Step
+                                        3</span>
+                                    <span class="font-label-md text-label-md text-text-muted">Payment Method</span>
+                                </div>
+                            </div>
+                            <span class="w-6 sm:w-10 h-0.5 bg-border-subtle flex-shrink-0"></span>
+                            <!-- Step 4: Upcoming -->
+                            <div class="flex items-center gap-2.5 flex-shrink-0 opacity-60">
+                                <span
+                                    class="w-7 h-7 rounded-full bg-surface-subtle text-text-muted flex items-center justify-center font-label-sm text-label-sm">
+                                    4
+                                </span>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Step
+                                        4</span>
+                                    <span class="font-label-md text-label-md text-text-muted">Confirmation</span>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Dynamic Countdown Reservation Pill -->
+                        <div
+                            class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-status-limited/10 text-status-limited font-label-md text-label-md self-start lg:self-auto flex-shrink-0 shadow-sm">
+                            <span class="material-symbols-outlined text-[18px] animate-pulse">timer</span>
+                            <span>Tickets reserved for <span class="font-mono font-bold"
+                                    id="checkout-timer">09:45</span>
+                                minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Content Grid -->
+            <section class="w-full pb-space-2xl">
+                <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+                        <!-- Left Column: Checkout & Billing Configuration (7 Columns) -->
+                        <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                            <!-- Fast Checkout Banner -->
+                            <div
+                                class="p-space-md bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex items-center justify-between gap-space-md">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center flex-shrink-0 text-on-primary-container">
+                                        <span class="material-symbols-outlined text-[20px]">bolt</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-headline-sm text-headline-sm text-text-primary">Already have an
+                                            ENTRADA account?</p>
+                                        <p class="font-body-sm text-body-sm text-text-muted">Sign in now for 1-click
+                                            checkout and saved
+                                            guest preferences.</p>
+                                    </div>
+                                </div>
+                                <button
+                                    class="px-4 py-2 rounded-full bg-surface-subtle hover:bg-surface-variant font-label-sm text-label-sm text-text-primary transition-all flex-shrink-0 whitespace-nowrap"
+                                    type="button">
+                                    Sign In
+                                </button>
+                            </div>
+                            <!-- Guest & Identification Form -->
+                            <div
+                                class="p-space-lg bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex flex-col gap-space-md">
+                                <div class="flex items-center justify-between pb-2 border-b-0">
+                                    <div class="flex items-center gap-2.5">
+                                        <span
+                                            class="w-6 h-6 rounded-full bg-primary-container text-text-primary font-bold text-center leading-6 text-[12px]">1</span>
+                                        <h2 class="font-headline-md text-headline-md text-text-primary">Customer
+                                            Information</h2>
+                                    </div>
+                                    <span
+                                        class="font-label-sm text-label-sm text-text-muted tracking-wide uppercase">All
+                                        Fields
+                                        Required</span>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <!-- First & Last Name -->
+                                    <div class="flex flex-col gap-1.5 sm:col-span-2">
+                                        <label class="font-label-md text-label-md text-text-primary" for="fullName">Full
+                                            Name (First &amp;
+                                            Last)</label>
+                                        <div class="relative">
+                                            <span
+                                                class="material-symbols-outlined absolute left-3.5 top-3 text-[18px] text-text-muted">badge</span>
+                                            <input
+                                                class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-subtle focus:bg-surface-card text-text-primary font-body-md text-body-md outline-none transition-all placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="fullName" placeholder="e.g. Tarek Omar El-Sayed" type="text"
+                                                value="Kareem Mostafa" />
+                                        </div>
+                                    </div>
+                                    <!-- Email Address -->
+                                    <div class="flex flex-col gap-1.5 sm:col-span-2">
+                                        <label
+                                            class="font-label-md text-label-md text-text-primary flex items-center justify-between"
+                                            for="email">
+                                            <span>Email Address</span>
+                                            <span class="font-body-sm text-body-sm text-text-muted font-normal">Where
+                                                e-tickets are
+                                                issued</span>
+                                        </label>
+                                        <div class="relative">
+                                            <span
+                                                class="material-symbols-outlined absolute left-3.5 top-3 text-[18px] text-text-muted">mail</span>
+                                            <input
+                                                class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-subtle focus:bg-surface-card text-text-primary font-body-md text-body-md outline-none transition-all placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="email" placeholder="name@example.com" type="email"
+                                                value="kareem.mostafa@cairocreative.eg" />
+                                        </div>
+                                    </div>
+                                    <!-- Mobile Number with Egyptian Prefix -->
+                                    <div class="flex flex-col gap-1.5">
+                                        <label class="font-label-md text-label-md text-text-primary" for="phone">Mobile
+                                            Number (Egypt
+                                            +20)</label>
+                                        <div class="flex items-center gap-2">
+                                            <div
+                                                class="flex items-center gap-1 px-3 py-2.5 bg-surface-subtle rounded-xl text-text-primary font-label-md text-label-md select-none">
+                                                <span class="text-[14px]">🇪🇬</span>
+                                                <span>+20</span>
+                                            </div>
+                                            <input
+                                                class="flex-1 px-4 py-2.5 rounded-xl bg-surface-subtle focus:bg-surface-card text-text-primary font-body-md text-body-md outline-none transition-all placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="phone" placeholder="10 1234 5678" type="tel" value="100 892 4119" />
+                                        </div>
+                                    </div>
+                                    <!-- National ID / Passport -->
+                                    <div class="flex flex-col gap-1.5">
+                                        <label
+                                            class="font-label-md text-label-md text-text-primary flex items-center justify-between"
+                                            for="nationalId">
+                                            <span>National ID / Passport</span>
+                                            <span
+                                                class="font-body-sm text-body-sm text-status-available font-normal">Teatro
+                                                90 Entry</span>
+                                        </label>
+                                        <div class="relative">
+                                            <span
+                                                class="material-symbols-outlined absolute left-3.5 top-3 text-[18px] text-text-muted">verified_user</span>
+                                            <input
+                                                class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-subtle focus:bg-surface-card text-text-primary font-body-md text-body-md outline-none transition-all placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="nationalId" placeholder="14-digit Egyptian ID" type="text"
+                                                value="29810140102938" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Delivery Method Selection -->
+                            <div
+                                class="p-space-lg bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex flex-col gap-space-md">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2.5">
+                                        <span
+                                            class="w-6 h-6 rounded-full bg-primary-container text-text-primary font-bold text-center leading-6 text-[12px]">2</span>
+                                        <h2 class="font-headline-md text-headline-md text-text-primary">Delivery Method
+                                        </h2>
+                                    </div>
+                                    <span
+                                        class="px-2.5 py-1 bg-tertiary-container/20 text-on-tertiary-container rounded-full font-label-sm text-label-sm font-bold">Instant
+                                        Dispatch</span>
+                                </div>
+                                <!-- Delivery Options -->
+                                <div class="flex flex-col gap-3">
+                                    <!-- Digital E-Ticket (Selected) -->
+                                    <label
+                                        class="relative flex items-start gap-4 p-4 rounded-xl bg-surface-subtle/80 cursor-pointer shadow-sm hover:bg-surface-subtle transition-all">
+                                        <input checked="" class="mt-1 w-4 h-4 text-primary focus:ring-0 cursor-pointer"
+                                            name="delivery_method" type="radio" value="digital" />
+                                        <div class="flex-1">
+                                            <div class="flex items-center justify-between">
+                                                <span
+                                                    class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-2">
+                                                    <span>Digital E-Ticket</span>
+                                                    <span
+                                                        class="px-2 py-0.5 rounded-full bg-status-available/10 text-status-available font-label-sm text-label-sm font-bold">Recommended</span>
+                                                </span>
+                                                <span
+                                                    class="font-label-md text-label-md text-status-available font-bold">Free</span>
+                                            </div>
+                                            <p class="font-body-sm text-body-sm text-text-muted mt-1">Instant delivery
+                                                to your email and SMS.
+                                                Includes Apple / Google Wallet pass and encrypted gate QR code.</p>
+                                        </div>
+                                    </label>
+                                    <!-- Paper Ticket Courier -->
+                                    <label
+                                        class="relative flex items-start gap-4 p-4 rounded-xl bg-surface-card hover:bg-surface-subtle/50 cursor-pointer transition-all">
+                                        <input class="mt-1 w-4 h-4 text-primary focus:ring-0 cursor-pointer"
+                                            name="delivery_method" type="radio" value="courier" />
+                                        <div class="flex-1">
+                                            <div class="flex items-center justify-between">
+                                                <span class="font-headline-sm text-headline-sm text-text-primary">Paper
+                                                    Ticket Delivery /
+                                                    Courier</span>
+                                                <span
+                                                    class="font-label-md text-label-md text-text-primary font-bold">+EGP
+                                                    50.00</span>
+                                            </div>
+                                            <p class="font-body-sm text-body-sm text-text-muted mt-1">Doorstep courier
+                                                delivery across Greater
+                                                Cairo &amp; Giza within 48-72 business hours before showtime.</p>
+                                        </div>
+                                    </label>
+                                    <!-- Pick up at Outlet -->
+                                    <label
+                                        class="relative flex items-start gap-4 p-4 rounded-xl bg-surface-card hover:bg-surface-subtle/50 cursor-pointer transition-all">
+                                        <input class="mt-1 w-4 h-4 text-primary focus:ring-0 cursor-pointer"
+                                            name="delivery_method" type="radio" value="outlet" />
+                                        <div class="flex-1">
+                                            <div class="flex items-center justify-between">
+                                                <span class="font-headline-sm text-headline-sm text-text-primary">Pick
+                                                    up at Authorized
+                                                    Outlet</span>
+                                                <span
+                                                    class="font-label-md text-label-md text-status-available font-bold">Free</span>
+                                            </div>
+                                            <p class="font-body-sm text-body-sm text-text-muted mt-1">Collect from
+                                                TicketsMarche partner
+                                                booths at Citystars Heliopolis, Mall of Arabia, or Arkan Plaza Sheikh
+                                                Zayed.</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Payment Method Selection -->
+                            <div
+                                class="p-space-lg bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex flex-col gap-space-md">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2.5">
+                                        <span
+                                            class="w-6 h-6 rounded-full bg-primary-container text-text-primary font-bold text-center leading-6 text-[12px]">3</span>
+                                        <h2 class="font-headline-md text-headline-md text-text-primary">Payment Method
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 text-text-muted font-body-sm text-body-sm">
+                                        <span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+                                        <span>PCI-DSS Certified</span>
+                                    </div>
+                                </div>
+                                <!-- Payment Channels Tabs -->
+                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="payment-options">
+                                    <!-- Option: Cards -->
+                                    <button
+                                        class="payment-btn p-3 rounded-xl bg-surface-subtle text-left flex flex-col gap-2 transition-all ring-2 ring-primary-container bg-surface-card shadow-sm"
+                                        data-payment="card" type="button">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[22px]">credit_card</span>
+                                        <span
+                                            class="font-label-md text-label-md text-text-primary font-bold leading-tight">Card
+                                            Payment</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted">Visa, MC, Meeza</span>
+                                    </button>
+                                    <!-- Option: Fawry -->
+                                    <button
+                                        class="payment-btn p-3 rounded-xl bg-surface-subtle text-left flex flex-col gap-2 transition-all hover:bg-surface-variant"
+                                        data-payment="fawry" type="button">
+                                        <span
+                                            class="material-symbols-outlined text-text-muted text-[22px]">storefront</span>
+                                        <span
+                                            class="font-label-md text-label-md text-text-primary font-bold leading-tight">Fawry
+                                            Pay</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted">Retail Kiosks</span>
+                                    </button>
+                                    <!-- Option: Wallets -->
+                                    <button
+                                        class="payment-btn p-3 rounded-xl bg-surface-subtle text-left flex flex-col gap-2 transition-all hover:bg-surface-variant"
+                                        data-payment="wallet" type="button">
+                                        <span
+                                            class="material-symbols-outlined text-text-muted text-[22px]">account_balance_wallet</span>
+                                        <span
+                                            class="font-label-md text-label-md text-text-primary font-bold leading-tight">Smart
+                                            Wallets</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted">Vodafone, Orange</span>
+                                    </button>
+                                    <!-- Option: Installments -->
+                                    <button
+                                        class="payment-btn p-3 rounded-xl bg-surface-subtle text-left flex flex-col gap-2 transition-all hover:bg-surface-variant"
+                                        data-payment="installments" type="button">
+                                        <span
+                                            class="material-symbols-outlined text-text-muted text-[22px]">payments</span>
+                                        <span
+                                            class="font-label-md text-label-md text-text-primary font-bold leading-tight">Installments</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted">valU / Sympl</span>
+                                    </button>
+                                </div>
+                                <!-- Card Inputs Container -->
+                                <div class="p-4 rounded-xl bg-surface-subtle/70 flex flex-col gap-4" id="card-panel">
+                                    <div class="flex flex-col gap-1.5">
+                                        <label class="font-label-md text-label-md text-text-primary"
+                                            for="cardNumber">Cardholder
+                                            Number</label>
+                                        <div class="relative">
+                                            <span
+                                                class="material-symbols-outlined absolute left-3.5 top-3 text-[18px] text-text-muted">credit_card</span>
+                                            <input
+                                                class="w-full pl-10 pr-24 py-2.5 rounded-xl bg-surface-card text-text-primary font-mono text-[14px] outline-none placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="cardNumber" maxlength="19" placeholder="4000 1234 5678 9010"
+                                                type="text" />
+                                            <div
+                                                class="absolute right-3 top-2.5 flex items-center gap-1.5 text-text-muted text-[11px] font-bold">
+                                                <span class="px-1.5 py-0.5 rounded bg-surface-subtle">VISA</span>
+                                                <span class="px-1.5 py-0.5 rounded bg-surface-subtle">MC</span>
+                                                <span class="px-1.5 py-0.5 rounded bg-surface-subtle">MEEZA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="flex flex-col gap-1.5">
+                                            <label class="font-label-md text-label-md text-text-primary"
+                                                for="expiry">Expires (MM/YY)</label>
+                                            <input
+                                                class="w-full px-4 py-2.5 rounded-xl bg-surface-card text-text-primary font-mono text-[14px] outline-none placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="expiry" maxlength="5" placeholder="11/28" type="text" />
+                                        </div>
+                                        <div class="flex flex-col gap-1.5">
+                                            <label
+                                                class="font-label-md text-label-md text-text-primary flex items-center justify-between"
+                                                for="cvv">
+                                                <span>CVV / CVC</span>
+                                                <span class="material-symbols-outlined text-[16px] text-text-muted"
+                                                    title="3 or 4 digits on back of card">help</span>
+                                            </label>
+                                            <input
+                                                class="w-full px-4 py-2.5 rounded-xl bg-surface-card text-text-primary font-mono text-[14px] outline-none placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                id="cvv" maxlength="4" placeholder="•••" type="password" />
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2 pt-1">
+                                        <input checked=""
+                                            class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer"
+                                            id="saveCard" type="checkbox" />
+                                        <label class="font-body-sm text-body-sm text-text-muted cursor-pointer"
+                                            for="saveCard">
+                                            Save card securely for future 1-tap bookings on ENTRADA
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Alternative Payment Informational Panels (Hidden initially) -->
+                                <div class="hidden p-4 rounded-xl bg-surface-subtle flex flex-col gap-2"
+                                    id="fawry-panel">
+                                    <span class="font-headline-sm text-headline-sm text-text-primary">Fawry Reference
+                                        Code</span>
+                                    <p class="font-body-sm text-body-sm text-text-muted">A dedicated 9-digit payment
+                                        reference code will
+                                        be generated upon confirmation. Pay at any nearby kiosk or retail outlet within
+                                        6 hours to retain
+                                        your tickets.</p>
+                                </div>
+                                <div class="hidden p-4 rounded-xl bg-surface-subtle flex flex-col gap-2"
+                                    id="wallet-panel">
+                                    <span class="font-headline-sm text-headline-sm text-text-primary">Mobile Wallet
+                                        Transfer</span>
+                                    <p class="font-body-sm text-body-sm text-text-muted">Supports Vodafone Cash, Orange
+                                        Money, Etisalat
+                                        Cash, and WE Pay. Enter your registered wallet phone number on the next screen
+                                        to receive the
+                                        payment prompt.</p>
+                                </div>
+                                <div class="hidden p-4 rounded-xl bg-surface-subtle flex flex-col gap-2"
+                                    id="installments-panel">
+                                    <span class="font-headline-sm text-headline-sm text-text-primary">Buy Now, Pay Later
+                                        (valU /
+                                        Sympl)</span>
+                                    <p class="font-body-sm text-body-sm text-text-muted">Split your order into 3 to 12
+                                        flexible monthly
+                                        installments with zero interest during ongoing festival partnerships.</p>
+                                </div>
+                            </div>
+                            <!-- Legal & Compliance Checkbox -->
+                            <div
+                                class="p-space-md bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex items-start gap-3">
+                                <input checked=""
+                                    class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer flex-shrink-0"
+                                    id="termsAgree" type="checkbox" />
+                                <label class="font-body-sm text-body-sm text-text-muted cursor-pointer"
+                                    for="termsAgree">
+                                    I agree to the <a class="text-text-primary font-bold underline hover:text-primary"
+                                        href="#">Terms
+                                        &amp; Conditions</a>, high-security gate entrance policies, and <a
+                                        class="text-text-primary font-bold underline hover:text-primary"
+                                        href="#">TicketsMarche Refund &amp;
+                                        Exchange Policy</a>. All sales for live shows at Teatro 90 are final unless
+                                    event rescheduling
+                                    occurs.
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Right Column: Sticky Order Summary & Booking Card (5 Columns) -->
+                        <div class="lg:col-span-5 flex flex-col gap-space-lg lg:sticky lg:top-28">
+                            <!-- Order Overview Box -->
+                            <div
+                                class="bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.06)] overflow-hidden">
+                                <!-- Event Visual Header -->
+                                <div class="p-5 bg-gradient-to-br from-surface-subtle to-surface-card flex gap-4">
+                                    <div class="w-24 h-28 rounded-xl overflow-hidden flex-shrink-0 relative shadow-sm">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Vibrant modern live indie music stage concert at Teatro 90 with warm amber stage lighting, crowd silhouettes, dramatic spotlight rays, and bold editorial atmosphere."
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD62LTU_GuXkJXkEVdr4-5CsAeCkOvi0hYPfrIaWINnZM5Go2rAeWr1BnUvp7Yg8IMLPo-k5WjumEWEj1MNxCBuDbLQ71m1vmtOlKNoJDFtphO7scpJTuv5EsF6xKDQzNpRW2-bOwUT2r5ZGtJ2szLdc4brb6SZk80et3DAEFfWie5LRFqkNngfELnln9Yt7RDAWzfQXP2ikBoyPfRhuAihbp_0IRQqrhOuTzajtrgzVi0CPRQjCK9-" />
+                                        <span
+                                            class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-text-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">
+                                            LIVE
+                                        </span>
+                                    </div>
+                                    <div class="flex flex-col justify-between min-w-0">
+                                        <div>
+                                            <div class="flex items-center gap-1.5 mb-1 text-primary">
+                                                <span class="w-2 h-2 rounded-full bg-status-available"></span>
+                                                <span
+                                                    class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Teatro
+                                                    90 Music
+                                                    Series</span>
+                                            </div>
+                                            <h3
+                                                class="font-headline-sm text-headline-sm text-text-primary font-extrabold truncate">
+                                                Playcrowd: Vol. 02 at Teatro 90
+                                            </h3>
+                                            <p
+                                                class="font-body-sm text-body-sm text-text-muted mt-1 flex items-center gap-1">
+                                                <span
+                                                    class="material-symbols-outlined text-[16px]">calendar_month</span>
+                                                <span>Thu, Oct 23, 2026 | 08:00 PM</span>
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="flex items-center gap-1 text-text-muted font-body-sm text-body-sm mt-2">
+                                            <span class="material-symbols-outlined text-[16px]">location_on</span>
+                                            <span class="truncate">Teatro 90, New Cairo, Egypt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Seat Allocation Badge -->
+                                <div
+                                    class="px-5 py-3 bg-surface-subtle/90 flex items-center justify-between text-text-primary font-label-md text-label-md">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-[18px] text-primary">event_seat</span>
+                                        <span class="font-bold">2x Golden Circle Zone</span>
+                                    </div>
+                                    <span class="text-text-muted font-body-sm text-body-sm font-medium">Row G • Seats
+                                        14, 15</span>
+                                </div>
+                                <!-- Line Items Breakdown -->
+                                <div class="p-5 flex flex-col gap-3">
+                                    <div class="flex items-center justify-between font-body-md text-body-md">
+                                        <span class="text-text-muted">Tickets Subtotal (2x EGP 750.00)</span>
+                                        <span class="font-semibold text-text-primary">EGP 1,500.00</span>
+                                    </div>
+                                    <div class="flex items-center justify-between font-body-md text-body-md">
+                                        <span class="text-text-muted flex items-center gap-1">
+                                            <span>Booking &amp; Facility Service Fee</span>
+                                            <span class="material-symbols-outlined text-[14px]"
+                                                title="Authorized ticketing and platform maintenance fee">info</span>
+                                        </span>
+                                        <span class="font-semibold text-text-primary">EGP 60.00</span>
+                                    </div>
+                                    <div class="flex items-center justify-between font-body-md text-body-md">
+                                        <span class="text-text-muted">Value Added Tax (14% VAT included)</span>
+                                        <span class="font-semibold text-text-primary">EGP 0.00</span>
+                                    </div>
+                                    <!-- Promo Code Expansion Strip -->
+                                    <div class="pt-2">
+                                        <div class="flex gap-2">
+                                            <div class="relative flex-1">
+                                                <span
+                                                    class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-text-muted">sell</span>
+                                                <input
+                                                    class="w-full pl-9 pr-3 py-2 rounded-xl bg-surface-subtle text-text-primary uppercase font-mono text-[12px] outline-none placeholder:text-text-muted focus:shadow-[0_0_0_2px_#ffc100]"
+                                                    id="promo-input" placeholder="Promo or Voucher code" type="text" />
+                                            </div>
+                                            <button
+                                                class="px-4 py-2 rounded-xl bg-surface-subtle hover:bg-surface-variant font-label-md text-label-md text-text-primary font-bold transition-all"
+                                                id="apply-promo" type="button">
+                                                Apply
+                                            </button>
+                                        </div>
+                                        <div class="hidden mt-2 flex items-center gap-1.5 text-status-available font-body-sm text-body-sm font-semibold"
+                                            id="promo-success">
+                                            <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                                            <span>Promo code 'CAIRO2026' applied (-EGP 0.00)</span>
+                                        </div>
+                                    </div>
+                                    <!-- Total Payable Amount -->
+                                    <div class="pt-4 mt-2 flex items-baseline justify-between">
+                                        <div>
+                                            <span
+                                                class="font-headline-md text-headline-md text-text-primary block font-extrabold">Total
+                                                Amount</span>
+                                            <span class="font-body-sm text-body-sm text-text-muted">Includes all taxes
+                                                and gate fees</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span
+                                                class="font-headline-lg text-headline-lg text-text-primary font-black tracking-tight">EGP
+                                                1,560.00</span>
+                                        </div>
+                                    </div>
+                                    <!-- Primary Action Checkout Button -->
+                                    <button
+                                        class="w-full mt-3 py-3.5 px-6 rounded-full bg-primary-container hover:brightness-95 active:scale-[0.99] text-text-primary font-headline-sm text-headline-sm font-extrabold shadow-md transition-all flex items-center justify-center gap-2 group"
+                                        id="pay-button" type="button">
+                                        <span
+                                            class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5">lock</span>
+                                        <span>Confirm &amp; Pay EGP 1,560.00</span>
+                                    </button>
+                                    <p class="font-body-sm text-body-sm text-center text-text-muted mt-1">
+                                        By pressing Confirm, you authorize ENTRADA to charge your selected method.
+                                    </p>
+                                </div>
+                                <!-- Trust & Verification Footer -->
+                                <div class="p-4 bg-surface-subtle/70 grid grid-cols-3 gap-2 text-center">
+                                    <div class="flex flex-col items-center gap-1">
+                                        <span class="material-symbols-outlined text-primary text-[20px]">security</span>
+                                        <span class="font-label-sm text-label-sm text-text-primary font-bold">256-bit
+                                            SSL</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted text-[10px]">Bank
+                                            Grade</span>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-1">
+                                        <span
+                                            class="material-symbols-outlined text-status-available text-[20px]">verified</span>
+                                        <span class="font-label-sm text-label-sm text-text-primary font-bold">Official
+                                            Partner</span>
+                                        <span
+                                            class="font-body-sm text-body-sm text-text-muted text-[10px]">TicketsMarche</span>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-1">
+                                        <span
+                                            class="material-symbols-outlined text-tertiary text-[20px]">qr_code_2</span>
+                                        <span class="font-label-sm text-label-sm text-text-primary font-bold">Instant
+                                            Pass</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted text-[10px]">Apple &amp;
+                                            Wallet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Customer Service Contact Card -->
+                            <div
+                                class="p-space-md bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.03)] flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-subtle flex items-center justify-center flex-shrink-0 text-text-muted">
+                                        <span class="material-symbols-outlined text-[20px]">headset_mic</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-text-primary block font-bold">Need
+                                            assistance?</span>
+                                        <span class="font-body-sm text-body-sm text-text-muted">Our Cairo support
+                                            hotline is open
+                                            24/7</span>
+                                    </div>
+                                </div>
+                                <a class="px-3.5 py-1.5 rounded-full bg-surface-subtle hover:bg-surface-variant font-label-md text-label-md text-text-primary font-bold transition-colors"
+                                    href="tel:16826">
+                                    Call 16826
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script>
+            (function initCheckoutTimer() {
+                let duration = 9 * 60 + 45;
+                const timerDisplay = document.getElementById('checkout-timer');
+
+                if (!timerDisplay) return;
+
+                const interval = setInterval(function () {
+                    let minutes = Math.floor(duration / 60);
+                    let seconds = duration % 60;
+
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                    timerDisplay.textContent = minutes + ':' + seconds;
+
+                    if (--duration < 0) {
+                        clearInterval(interval);
+                        timerDisplay.textContent = '00:00';
+                    }
+                }, 1000);
+            })();
+
+            const paymentButtons = document.querySelectorAll('.payment-btn');
+            const paymentPanels = ['card-panel', 'fawry-panel', 'wallet-panel', 'installments-panel'];
+
+            paymentButtons.forEach((button) => {
+                button.addEventListener('click', function () {
+                    paymentButtons.forEach((item) => {
+                        item.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-card', 'shadow-sm');
+                        item.classList.add('bg-surface-subtle');
+
+                        const icon = item.querySelector('.material-symbols-outlined');
+                        if (icon) {
+                            icon.classList.remove('text-primary');
+                            icon.classList.add('text-text-muted');
+                        }
+                    });
+
+                    this.classList.remove('bg-surface-subtle');
+                    this.classList.add('ring-2', 'ring-primary-container', 'bg-surface-card', 'shadow-sm');
+
+                    const activeIcon = this.querySelector('.material-symbols-outlined');
+                    if (activeIcon) {
+                        activeIcon.classList.remove('text-text-muted');
+                        activeIcon.classList.add('text-primary');
+                    }
+
+                    paymentPanels.forEach((panelId) => {
+                        const panel = document.getElementById(panelId);
+                        if (panel) panel.classList.add('hidden');
+                    });
+
+                    const target = this.getAttribute('data-payment');
+                    const targetPanel = {
+                        card: 'card-panel',
+                        fawry: 'fawry-panel',
+                        wallet: 'wallet-panel',
+                        installments: 'installments-panel'
+                    }[target];
+
+                    if (targetPanel) {
+                        const panel = document.getElementById(targetPanel);
+                        if (panel) panel.classList.remove('hidden');
+                    }
+                });
+            });
+
+            const applyPromoBtn = document.getElementById('apply-promo');
+            const promoInput = document.getElementById('promo-input');
+            const promoSuccess = document.getElementById('promo-success');
+
+            if (applyPromoBtn && promoInput && promoSuccess) {
+                applyPromoBtn.addEventListener('click', function () {
+                    if (promoInput.value.trim() !== '') {
+                        promoSuccess.classList.remove('hidden');
+                        promoInput.disabled = true;
+                        applyPromoBtn.textContent = 'Applied';
+                        applyPromoBtn.disabled = true;
+                    }
+                });
+            }
+
+            const payBtn = document.getElementById('pay-button');
+            if (payBtn) {
+                payBtn.addEventListener('click', function () {
+                    this.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> Processing Reservation...';
+                    this.classList.add('opacity-80', 'pointer-events-none');
+
+                    setTimeout(() => {
+                        this.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> Booking Confirmed!';
+                        this.classList.remove('bg-primary-container');
+                        this.classList.add('bg-status-available', 'text-on-primary');
+                    }, 1500);
+                });
+            }
+        </script>
+    </main>
+    <footer class="w-full bg-surface-card shadow-[0_-1px_8px_rgba(0,0,0,0.03)]">
+        <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-2xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl">
+                <div class="flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-sm mb-space-xs"><img alt="ENTRADA Wordmark Logo"
+                            class="h-7 w-auto object-contain"
+                            src="https://lh3.googleusercontent.com/aida/AEtjO1X_gyeBe1oeq-6KPkHxcwFH2kQMQm_Xs8jGQZ6hRw2iYLSP8533TghA0h7y4DWWkW-pfjR7pBRq6OHqwJ81RJmy-YnuuPXiTZy2X8XKRl4peROGnXANLrj_2w5GdV36F_lr0otSA1pP-txY8EbBbLmi9Xyw1f4mxEgJJ0pxYHxnZii8jBFUpx06wfiR6MJDEoW8PRHc6BVX7X8ri3r3VUGK-EIBPrScTbW4ySxhO0a8nl5HZaw7Nc64Xg" /><span
+                            class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-extrabold">ENTRADA</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-text-muted max-w-xs leading-relaxed">Your premier ticketing
+                        destination for live concerts, theater, sports, and cultural entertainment.</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Tickets on Sale</h4>
+                    <nav class="flex flex-col gap-2.5" data-active-classes="text-primary-container font-bold"><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="events" href="#">All Tickets on Sale</a><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="event-details" href="#">Featured Concerts</a><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="outlets" href="#">Ticket Outlets</a><a aria-current="page"
+                            class="transition-colors text-primary-container font-bold" data-path="checkout" href="#">My
+                            Bookings</a>
+                    </nav>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-headline-sm text-text-primary mb-1">Company</h4>
+                    <nav class="flex flex-col gap-2.5" data-active-classes="text-primary-container font-bold"><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="home" href="#">About ENTRADA</a><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="contact" href="#">Contact &amp; Press</a><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="contact" href="#">Careers &amp; Partners</a><a
+                            class="font-body-sm text-body-sm text-text-muted hover:text-text-primary transition-colors"
+                            data-path="contact" href="#">Terms &amp; Conditions</a></nav>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="p-space-md rounded-2xl bg-surface-subtle flex flex-col gap-space-xs"><span
+                            class="font-headline-sm text-headline-sm text-text-primary">Support Helpline</span>
+                        <p class="font-body-sm text-body-sm text-text-muted">Dedicated ticket and seat reservation
+                            assistance
+                            available 24/7.</p>
+                        <div class="flex items-center gap-space-sm mt-space-xs"><a
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-card text-text-primary font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.04)] hover:bg-surface-variant transition-colors"
+                                data-path="contact" href="#"><span
+                                    class="material-symbols-outlined text-[16px] text-tertiary">call</span><span>Call
+                                    Center</span></a><a
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-card text-text-primary font-label-sm text-label-sm shadow-[0_1px_4px_rgba(0,0,0,0.04)] hover:bg-surface-variant transition-colors"
+                                data-path="contact" href="#"><span
+                                    class="material-symbols-outlined text-[16px] text-tertiary">chat</span><span>Live
+                                    Chat</span></a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3"><a
+                            class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-surface-variant transition-all"
+                            href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a
+                            class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-surface-variant transition-all"
+                            href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a
+                            class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-surface-variant transition-all"
+                            href="#"><span class="material-symbols-outlined text-[18px]">tag</span></a><a
+                            class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-surface-variant transition-all"
+                            href="#"><span class="material-symbols-outlined text-[18px]">music_note</span></a></div>
+                </div>
+            </div>
+            <div
+                class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-border-subtle/50 text-text-muted font-body-sm text-body-sm">
+                <p>© ENTRADA 2026 - All rights reserved.</p>
+                <div class="flex items-center gap-6"><a class="hover:text-text-primary transition-colors"
+                        data-path="contact" href="#">Privacy Policy</a><a
+                        class="hover:text-text-primary transition-colors" data-path="contact" href="#">Purchase
+                        Terms</a><a class="hover:text-text-primary transition-colors" data-path="contact" href="#">Help
+                        Center</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
