@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+@source "../HTML";
+@source inline("lg:flex-row lg:w-72 lg:shrink-0 lg:aspect-auto gap-4 gap-6 bg-white shadow-sm text-slate-900 text-slate-600");
