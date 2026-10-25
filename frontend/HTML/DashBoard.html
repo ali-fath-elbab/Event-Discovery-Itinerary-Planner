@@ -719,85 +719,99 @@
 
   </main>
 
-  <footer class="w-full border-t border-gray-100 bg-white pt-16 pb-12 mt-16 text-xs text-gray-500">
+  <footer id="footer-section" class="w-full border-t border-gray-100 bg-white pt-16 pb-12 mt-16 text-xs text-gray-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
-        
-        <div class="lg:col-span-3 space-y-3">
+
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div
+              class="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-xs">
+              <i class="fa-solid fa-ticket text-sm"></i>
+            </div>
+            <span class="text-lg font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed max-w-sm">
+            Your premier ticketing destination for live concerts, theater, sports, and cultural entertainment.
+          </p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
           <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Tickets on Sale</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="All Events.html" class="hover:text-amber-600 transition">Concerts & Festivals</a></li>
-            <li><a href="All Events.html" class="hover:text-amber-600 transition">Sports & Tournaments</a></li>
-            <li><a href="All Events.html" class="hover:text-amber-600 transition">Theater & Performing Arts</a></li>
-            <li><a href="All Events.html" class="hover:text-amber-600 transition">Family & Kids Attractions</a></li>
-            <li><a href="All Events.html" class="hover:text-amber-600 transition">VIP & Exclusive Passes</a></li>
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">All Tickets on Sale</a></li>
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">Hot Events</a></li>
           </ul>
         </div>
 
-        <div class="lg:col-span-3 space-y-3">
+        <div class="lg:col-span-2 space-y-3">
           <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Company</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="#" class="hover:text-amber-600 transition">About ENTRADA</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Retail Outlets</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Sell with Us</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Contact Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Careers</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Policies</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">FAQs</a></li>
           </ul>
         </div>
 
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Support & Help</h4>
-          <ul class="space-y-2 text-xs">
-            <li><a href="#" class="hover:text-amber-600 transition">Help Center / FAQ</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Ticket Refund Policy</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Lost & Found Tickets</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Accessible Seating</a></li>
-            <li><a href="#" class="hover:text-amber-600 transition">Report Ticket Fraud</a></li>
-          </ul>
-        </div>
-
-        <div class="lg:col-span-3 space-y-4">
+        <div class="lg:col-span-4 space-y-4">
           <div class="p-5 rounded-2xl bg-gray-50/80 border border-gray-100">
-            <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase mb-1">Need Quick Help?</h4>
-            <p class="text-[11px] text-gray-500 mb-3">Official Call Center & Assistance</p>
-            
-            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-amber-400 text-slate-950 mb-2.5 shadow-xs">
-              <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
-                <i class="fa-solid fa-phone text-xs"></i>
-              </div>
-              <div>
-                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-800">Call Center Hotline</span>
-                <span class="text-base font-extrabold tracking-tight">16826</span>
-              </div>
+            <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase mb-1">Need some help?</h4>
+            <p class="text-xs text-gray-500 mb-4">Contact our team anytime for dedicated ticket assistance.</p>
+
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <a href="tel:16826"
+                class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-phone text-emerald-600"></i>
+                <span>Call Center</span>
+              </a>
+              <a href="#"
+                class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-comments text-amber-600"></i>
+                <span>Live Chat</span>
+              </a>
             </div>
 
-            <button type="button" class="w-full py-2 px-3 rounded-xl bg-white border border-gray-200 hover:bg-gray-50 text-slate-800 font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition">
-              <i class="fa-regular fa-comment-dots text-amber-500"></i>
-              <span>Start Live Chat</span>
-            </button>
+            <div class="flex items-center gap-2 pt-2 border-t border-gray-200/60">
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Website">
+                <i class="fa-solid fa-globe text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Instagram">
+                <i class="fa-brands fa-instagram text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="TikTok">
+                <i class="fa-brands fa-tiktok text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook text-xs"></i>
+              </a>
+            </div>
           </div>
         </div>
 
       </div>
 
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-        <p>© 2026 ENTRADA Ticketing Solutions. All rights reserved.</p>
-        <div class="flex items-center gap-4 text-[11px] font-medium text-slate-600">
-          <span class="flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Platform Systems Operational
-          </span>
-          <span>•</span>
-          <span class="flex items-center gap-1 text-gray-500">
-            <i class="fa-solid fa-lock text-[10px]"></i>
-            Secure SSL Encrypted Checkout
-          </span>
+        <p>© ENTRADA 2026 - All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-700 transition">Privacy</a>
+          <a href="#" class="hover:text-slate-700 transition">Terms</a>
+          <a href="#" class="hover:text-slate-700 transition">Support</a>
         </div>
       </div>
 
     </div>
   </footer>
-
 </body>
 </html>
