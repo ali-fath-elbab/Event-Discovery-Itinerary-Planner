@@ -13,7 +13,7 @@
 
 <body class="min-h-screen bg-white font-sans text-slate-900">
 
-    <main class="grid min-h-screen w-full grid-cols-1 overflow-hidden bg-white lg:grid-cols-2">
+    <main class="grid min-h-screen w-full grid-cols-1 overflow-hidden bg-white lg:h-screen lg:min-h-0 lg:grid-cols-2">
 
         <section class="relative flex min-h-[430px] flex-col justify-between overflow-hidden bg-slate-950 px-7 py-8 text-white sm:px-10 sm:py-10 lg:min-h-screen lg:px-12">
 
@@ -111,9 +111,9 @@
 
         </section>
 
-        <section class="flex flex-col justify-center bg-white px-6 py-9 sm:px-10 sm:py-12 lg:px-12 lg:py-10">
+        <section class="flex flex-col justify-center bg-white px-6 py-6 sm:px-10 sm:py-8 lg:min-h-0 lg:overflow-y-auto lg:px-10 lg:pt-5 lg:pb-0">
 
-            <div class="mb-9 flex items-center justify-between gap-3">
+            <div class="mb-9 lg:mb-3 flex items-center justify-between gap-3">
 
                 <a href="Home.html" class="flex items-center gap-3" aria-label="ENTRADA Home">
 
@@ -140,7 +140,7 @@
 
             </div>
 
-            <div class="mb-8">
+            <div class="mb-8 lg:mb-3">
 
                 <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                     Welcome Back to ENTRADA
@@ -153,7 +153,7 @@
 
             </div>
 
-            <form method="post" class="space-y-5">
+            <form method="post" class="space-y-5 lg:space-y-3">
 
                 <div>
 
@@ -161,7 +161,7 @@
                         Email Address
                     </label>
 
-                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
+                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 lg:py-2 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
 
                         <svg
                             aria-hidden="true"
@@ -195,7 +195,7 @@
                         Password
                     </label>
 
-                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
+                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 lg:py-2 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
 
                         <svg
                             aria-hidden="true"
@@ -253,7 +253,7 @@
 
                 <button
                     type="submit"
-                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 lg:py-2.5 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                 >
                     Sign In
 
@@ -273,7 +273,7 @@
 
             </form>
 
-            <div class="my-7 flex items-center gap-4">
+            <div class="my-7 lg:my-2 flex items-center gap-4">
 
                 <div class="h-px flex-1 bg-slate-200"></div>
 
@@ -311,7 +311,7 @@
 
             <a
                 href="#one-time-password"
-                class="mt-6 flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-semibold text-slate-800 transition-colors hover:text-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
+                class="mt-6 lg:mt-2 flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-semibold text-slate-800 transition-colors hover:text-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
             >
                 <span aria-hidden="true" class="text-lg text-amber-500">
                     ▯
@@ -320,7 +320,7 @@
                 Sign in with One-Time Password (OTP)
             </a>
 
-            <div class="mt-10 flex flex-wrap items-center justify-between gap-3 rounded-full bg-slate-100 px-4 py-4 text-sm">
+            <div class="mt-10 lg:mt-3 flex flex-wrap items-center justify-between gap-3 rounded-full bg-slate-100 px-4 py-4 lg:py-2 text-sm">
 
                 <span class="text-slate-500">
                     Don't have an ENTRADA account?
@@ -335,7 +335,7 @@
 
             </div>
 
-            <p class="mt-5 text-center text-xs leading-5 text-slate-500">
+            <p class="mt-5 lg:mt-2 text-center text-xs leading-5 text-slate-500">
                 By signing in, you agree to ENTRADA's
                 <a href="#terms" class="font-medium underline underline-offset-2">Terms of Use</a>
                 and
