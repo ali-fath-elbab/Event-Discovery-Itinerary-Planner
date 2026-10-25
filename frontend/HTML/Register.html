@@ -13,7 +13,7 @@
 
 <body class="min-h-screen bg-white font-sans text-slate-900">
 
-    <main class="grid min-h-screen w-full grid-cols-1 overflow-hidden bg-white lg:grid-cols-2">
+    <main class="grid min-h-screen w-full grid-cols-1 overflow-hidden bg-white lg:h-screen lg:min-h-0 lg:grid-cols-2">
 
         <section
             class="relative flex min-h-[420px] flex-col justify-between overflow-hidden bg-slate-950 px-7 py-8 text-white sm:px-10 sm:py-10 lg:min-h-screen lg:px-12">
@@ -83,11 +83,11 @@
 
         </section>
 
-        <section class="bg-white px-6 py-9 sm:px-10 sm:py-12 lg:px-12 lg:py-10">
+        <section class="bg-white px-5 py-6 sm:px-10 sm:py-8 lg:min-h-0 lg:overflow-y-auto lg:px-10 lg:pt-5 lg:pb-0">
 
-            <header class="mb-8">
+            <header class="mb-8 lg:mb-1">
 
-                <div class="mb-7 flex items-center justify-between gap-3">
+                <div class="mb-7 lg:mb-1 flex items-center justify-between gap-3">
 
                     <a href="Home.html" class="flex items-center gap-2.5 group">
                         <div
@@ -99,18 +99,18 @@
 
                 </div>
 
-                <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-2xl">
                     Create Your ENTRADA Account
                 </h2>
 
-                <p class="mt-3 text-sm leading-6 text-slate-500 sm:text-base">
+                <p class="mt-3 lg:mt-1 text-sm leading-6 text-slate-500 sm:text-base lg:leading-5">
                     Join ENTRADA to discover events, save favorites,
                     and plan your weekends.
                 </p>
 
             </header>
 
-            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:gap-1">
 
                 <button type="button"
                     class="flex items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 font-semibold transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">
@@ -126,7 +126,7 @@
 
             </div>
 
-            <div class="my-7 flex items-center gap-4">
+            <div class="my-7 lg:my-1 flex items-center gap-4">
 
                 <div class="h-px flex-1 bg-slate-200"></div>
 
@@ -138,17 +138,25 @@
 
             </div>
 
-            <form method="post" class="space-y-5">
-
+            <form method="post" class="space-y-5 lg:space-y-1">
+        
                 <div>
 
                     <label for="full-name" class="mb-2 block text-sm font-semibold">
                         Full Legal Name
                     </label>
 
-                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"
-                        autocomplete="name" minlength="3" maxlength="80" required
-                        class="w-full rounded-full bg-slate-100 px-5 py-3 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400">
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        minlength="3"
+                        maxlength="80"
+                        required
+                        class="w-full rounded-full bg-slate-100 px-5 py-3 lg:py-1.5 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400"
+                    >
 
                 </div>
 
@@ -158,8 +166,7 @@
                         Egyptian Mobile Number
                     </label>
 
-                    <div
-                        class="flex gap-2 rounded-full bg-slate-100 p-2 focus-within:ring-2 focus-within:ring-amber-400">
+                    <div class="flex gap-2 rounded-full bg-slate-100 p-2 lg:p-1 focus-within:ring-2 focus-within:ring-amber-400">
 
                         <label for="country-code" class="sr-only">
                             Country code
@@ -192,7 +199,8 @@
 
                     <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
                         required
-                        class="w-full rounded-full bg-slate-100 px-5 py-3 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400">
+                        class="w-full rounded-full bg-slate-100 px-5 py-3 lg:py-1.5 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400"
+                    >
 
                 </div>
 
@@ -208,9 +216,16 @@
                         </span>
                     </div>
 
-                    <input type="password" id="password" name="password" placeholder="Create a password"
-                        autocomplete="new-password" minlength="8" required
-                        class="w-full rounded-full bg-slate-100 px-5 py-3 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                        class="w-full rounded-full bg-slate-100 px-5 py-3 lg:py-1.5 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400"
+                    >
 
                     <div class="mt-3 grid grid-cols-4 gap-1" aria-hidden="true">
 
@@ -233,9 +248,16 @@
                         Confirm Password
                     </label>
 
-                    <input type="password" id="confirm-password" name="confirm-password"
-                        placeholder="Enter your password again" autocomplete="new-password" minlength="8" required
-                        class="w-full rounded-full bg-slate-100 px-5 py-3 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400">
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Enter your password again"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                        class="w-full rounded-full bg-slate-100 px-5 py-3 lg:py-1.5 text-sm outline-none transition-colors focus-visible:ring-2 focus-visible:ring-amber-400"
+                    >
 
                 </div>
 
@@ -261,15 +283,17 @@
 
                 </div>
 
-                <button type="submit"
-                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">
+                <button
+                    type="submit"
+                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 lg:py-2 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+                >
                     Create Account
                     <span aria-hidden="true">→</span>
                 </button>
 
             </form>
 
-            <p class="mt-8 text-center text-sm text-slate-500">
+            <p class="mt-8 lg:mt-1 text-center text-sm text-slate-500">
                 Already have an account?
 
                 <a href="Login.html"
@@ -278,7 +302,7 @@
                 </a>
             </p>
 
-            <footer class="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+            <footer class="mt-6 lg:mt-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
 
                 <a href="#privacy" class="hover:underline">
                     Privacy Policy
