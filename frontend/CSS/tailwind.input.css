@@ -1,4 +1,39 @@
 @import "tailwindcss";
 
 @source "../HTML";
-@source inline("lg:flex-row lg:w-72 lg:shrink-0 lg:aspect-auto gap-4 gap-6 bg-white shadow-sm text-slate-900 text-slate-600");
+
+@theme {
+    --color-canvas-bg: #f8f9fc;
+    --color-surface-card: #ffffff;
+    --color-surface-subtle: #f1f3f8;
+    --color-surface-variant: #e5e7eb;
+
+    --color-text-primary: #202124;
+    --color-text-muted: #6b7280;
+
+    --color-primary: #ffc100;
+    --color-primary-container: #ffc100;
+    --color-on-primary: #202124;
+    --color-on-primary-container: #202124;
+
+    --color-tertiary: #64748b;
+    --color-tertiary-container: #e2e8f0;
+    --color-on-tertiary-container: #475569;
+
+    --color-status-available: #16a34a;
+    --color-status-limited: #d97706;
+    --color-border-subtle: #e5e7eb;
+
+    --font-body: "Inter", sans-serif;
+    --font-headline: "Plus Jakarta Sans", sans-serif;
+
+    --spacing-space-xs: 0.25rem;
+    --spacing-space-sm: 0.5rem;
+    --spacing-space-md: 1rem;
+    --spacing-space-lg: 1.5rem;
+    --spacing-space-xl: 2rem;
+    --spacing-space-2xl: 3rem;
+
+    --spacing-margin-mobile: 1rem;
+    --spacing-margin: 2rem;
+}
