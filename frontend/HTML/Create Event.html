@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ENTRADA - Premier live events, concerts, theater, and ticket discovery platform in Cairo & Egypt.">
+  <title>ENTRADA - Live Events & Ticket Discovery</title>
 
-    <title>ENTRADA - Create Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="../CSS/tailwind.generated.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../CSS/tailwind.generated.css">
+
+  <link rel="stylesheet" href="../CSS/Home.css">
 </head>
 
 <body class="bg-slate-50 font-sans text-slate-900">
 
     <header class="border-b border-slate-200 bg-white">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4"
-             aria-label="Main navigation">
+        <nav class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
 
-            <a href="Home.html"
-               class="shrink-0 text-xl font-extrabold tracking-tight"
-               aria-label="ENTRADA Home">
-                <span class="text-amber-500">✦</span> ENTRADA
-            </a>
-
-            <div class="hidden items-center gap-5 text-sm text-slate-600 lg:flex">
-                <a href="Home.html" class="hover:text-amber-700">Home</a>
-                <a href="All Events.html" class="hover:text-amber-700">Events</a>
-                <a href="DashBoard.html" class="hover:text-amber-700">Dashboard</a>
-                <a href="Create Event.html"
-                   aria-current="page"
-                   class="font-bold text-slate-900">
-                    Create Event
+            <div class="flex items-center gap-6">
+                <a href="Home.html" class="flex items-center gap-2.5 group">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-sm group-hover:bg-amber-500 transition">
+                        <i class="fa-solid fa-ticket text-lg"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-950">ENTRADA</span>
                 </a>
-                <a href="Profile.html" class="hover:text-amber-700">Profile</a>
+
+                <div class="hidden md:flex items-center relative w-72 lg:w-96">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400 text-xs"></i>
+                    <input type="text" placeholder="Search events, artists, and venues..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-gray-50 border border-gray-200 text-xs text-slate-800 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-amber-400 focus:bg-white transition">
+                </div>
             </div>
 
-            <div class="flex shrink-0 items-center gap-2">
+            <div class="flex items-center gap-3 sm:gap-6">
+                <div class="hidden lg:flex items-center gap-6 text-xs font-semibold text-gray-600">
+                    <a href="Home.html" class="hover:text-slate-950 transition">Home</a>
+                    <a href="All Events.html" class="hover:text-slate-950 transition">Events</a>
+                    <a href="DashBoard.html" class="hover:text-slate-950 transition">Dashboard</a>
+                    <span class="text-gray-300">|</span>
+                    <div class="flex items-center gap-1.5 cursor-pointer text-gray-500 hover:text-slate-950 transition">
+                        <span>EN</span>
+                        <span class="text-gray-300">/</span>
+                        <span>AR</span>
+                    </div>
+                </div>
 
-                <a href="Login.html"
-                    class="inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold sm:px-4 sm:text-sm">
-                    Sign In
-                </a>
-
-                <a href="Register.html"
-                    class="inline-flex items-center justify-center rounded-full bg-amber-400 px-3 py-2 text-xs font-bold text-slate-950 hover:bg-amber-300 sm:px-4 sm:text-sm">
-                    Register
-                </a>
-
+                <div class="flex items-center gap-2.5">
+                    <a href="./Register.html"
+                        class="px-5 py-2.5 rounded-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+                        title="Go to Dashboard / Login">
+                        <span>Login / Register</span>
+                    </a>
+                    <a href="./Profile.html"
+                        class="w-9 h-9 rounded-full border border-gray-200 bg-white hover:bg-gray-50 flex items-center justify-center text-slate-700 transition"
+                        title="User Profile & Dashboard">
+                        <i class="fa-regular fa-user text-xs"></i>
+                    </a>
+                </div>
             </div>
+
+        </div>
         </nav>
     </header>
 
@@ -76,12 +102,12 @@
 
             <div class="flex flex-wrap gap-2">
                 <button type="button"
-                        class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-100">
+                    class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-100">
                     Preview
                 </button>
 
                 <button type="button"
-                        class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-100">
+                    class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-100">
                     Save Draft
                 </button>
 
@@ -94,7 +120,7 @@
         </section>
 
         <nav class="mb-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white p-3"
-             aria-label="Event creation steps">
+            aria-label="Event creation steps">
 
             <ol class="flex min-w-max items-center gap-3 sm:gap-5">
 
@@ -163,18 +189,13 @@
                     <div class="space-y-5">
 
                         <div>
-                            <label for="event-title"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="event-title" class="mb-2 block text-sm font-semibold">
                                 Event Title
                             </label>
 
-                            <input type="text"
-                                   id="event-title"
-                                   name="event-title"
-                                   placeholder="Enter your event title"
-                                   maxlength="100"
-                                   required
-                                   class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="text" id="event-title" name="event-title" placeholder="Enter your event title"
+                                maxlength="100" required
+                                class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <fieldset>
@@ -183,32 +204,38 @@
                             </legend>
 
                             <div class="flex flex-wrap gap-2">
-                                <label class="cursor-pointer rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white">
                                     <input type="radio" name="category" value="concert" class="sr-only" checked>
                                     Concert
                                 </label>
 
-                                <label class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
                                     <input type="radio" name="category" value="comedy" class="sr-only">
                                     Standup Comedy
                                 </label>
 
-                                <label class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
                                     <input type="radio" name="category" value="festival" class="sr-only">
                                     Festival &amp; Carnival
                                 </label>
 
-                                <label class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
                                     <input type="radio" name="category" value="theatre" class="sr-only">
                                     Art &amp; Theatre
                                 </label>
 
-                                <label class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
                                     <input type="radio" name="category" value="nightlife" class="sr-only">
                                     Nightlife &amp; DJ
                                 </label>
 
-                                <label class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
+                                <label
+                                    class="cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-xs hover:bg-slate-200">
                                     <input type="radio" name="category" value="sports" class="sr-only">
                                     Sports &amp; Fitness
                                 </label>
@@ -216,32 +243,24 @@
                         </fieldset>
 
                         <div>
-                            <label for="tagline"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="tagline" class="mb-2 block text-sm font-semibold">
                                 Tagline
                             </label>
 
-                            <input type="text"
-                                   id="tagline"
-                                   name="tagline"
-                                   placeholder="A short, memorable event tagline"
-                                   maxlength="150"
-                                   class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="text" id="tagline" name="tagline"
+                                placeholder="A short, memorable event tagline" maxlength="150"
+                                class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <div>
-                            <label for="description"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="description" class="mb-2 block text-sm font-semibold">
                                 Full Event Description
                             </label>
 
-                            <textarea id="description"
-                                      name="description"
-                                      rows="5"
-                                      maxlength="2000"
-                                      placeholder="Describe your event, performers, activities, and what attendees can expect."
-                                      required
-                                      class="w-full resize-y rounded-xl bg-slate-100 px-4 py-3 text-sm leading-6 outline-none focus-visible:ring-2 focus-visible:ring-amber-400"></textarea>
+                            <textarea id="description" name="description" rows="5" maxlength="2000"
+                                placeholder="Describe your event, performers, activities, and what attendees can expect."
+                                required
+                                class="w-full resize-y rounded-xl bg-slate-100 px-4 py-3 text-sm leading-6 outline-none focus-visible:ring-2 focus-visible:ring-amber-400"></textarea>
 
                             <p class="mt-2 text-xs text-slate-500">
                                 Describe the event clearly so attendees know what to expect.
@@ -257,12 +276,14 @@
 
                                 <div class="flex flex-wrap gap-4">
                                     <label class="flex items-center gap-2 text-sm">
-                                        <input type="checkbox" name="language" value="arabic" checked class="accent-amber-500">
+                                        <input type="checkbox" name="language" value="arabic" checked
+                                            class="accent-amber-500">
                                         Arabic
                                     </label>
 
                                     <label class="flex items-center gap-2 text-sm">
-                                        <input type="checkbox" name="language" value="english" checked class="accent-amber-500">
+                                        <input type="checkbox" name="language" value="english" checked
+                                            class="accent-amber-500">
                                         English
                                     </label>
 
@@ -274,14 +295,12 @@
                             </fieldset>
 
                             <div>
-                                <label for="age-restriction"
-                                       class="mb-2 block text-sm font-semibold">
+                                <label for="age-restriction" class="mb-2 block text-sm font-semibold">
                                     Age Restriction
                                 </label>
 
-                                <select id="age-restriction"
-                                        name="age-restriction"
-                                        class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <select id="age-restriction" name="age-restriction"
+                                    class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                                     <option>All Ages</option>
                                     <option>16+ Only (Valid ID required)</option>
                                     <option>18+ Only (Valid ID required)</option>
@@ -307,7 +326,8 @@
                         <legend class="sr-only">Event format</legend>
 
                         <div class="flex flex-wrap gap-3">
-                            <label class="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-semibold">
+                            <label
+                                class="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-semibold">
                                 <input type="radio" name="event-format" value="single" checked>
                                 Single Day
                             </label>
@@ -322,69 +342,50 @@
                     <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
 
                         <div>
-                            <label for="event-date"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="event-date" class="mb-2 block text-sm font-semibold">
                                 Event Date
                             </label>
 
-                            <input type="date"
-                                   id="event-date"
-                                   name="event-date"
-                                   required
-                                   class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="date" id="event-date" name="event-date" required
+                                class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <div>
-                            <label for="doors-open"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="doors-open" class="mb-2 block text-sm font-semibold">
                                 Doors Open
                             </label>
 
-                            <input type="time"
-                                   id="doors-open"
-                                   name="doors-open"
-                                   required
-                                   class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="time" id="doors-open" name="doors-open" required
+                                class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <div>
-                            <label for="event-start"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="event-start" class="mb-2 block text-sm font-semibold">
                                 Start Time
                             </label>
 
-                            <input type="time"
-                                   id="event-start"
-                                   name="event-start"
-                                   required
-                                   class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="time" id="event-start" name="event-start" required
+                                class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <div>
-                            <label for="event-end"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="event-end" class="mb-2 block text-sm font-semibold">
                                 End Time
                             </label>
 
-                            <input type="time"
-                                   id="event-end"
-                                   name="event-end"
-                                   required
-                                   class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="time" id="event-end" name="event-end" required
+                                class="w-full min-w-0 rounded-full bg-slate-100 px-3 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                     </div>
 
                     <div class="mt-5">
-                        <label for="venue"
-                               class="mb-2 block text-sm font-semibold">
+                        <label for="venue" class="mb-2 block text-sm font-semibold">
                             Select Cairo Venue
                         </label>
 
-                        <select id="venue"
-                                name="venue"
-                                required
-                                class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                        <select id="venue" name="venue" required
+                            class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             <option value="">Choose a venue</option>
                             <option value="cairo-stadium">Cairo International Stadium — Nasr City</option>
                             <option value="opera-house">Cairo Opera House — Zamalek</option>
@@ -395,7 +396,8 @@
 
                     <div class="mt-5 flex flex-col gap-4 rounded-2xl bg-slate-100 p-4 sm:flex-row sm:items-center">
 
-                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-xl">
+                        <div
+                            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-400 text-xl">
                             ⌖
                         </div>
 
@@ -409,7 +411,8 @@
                             </p>
                         </div>
 
-                        <div class="flex h-24 w-full items-center justify-center rounded-xl border border-slate-200 bg-white sm:w-40">
+                        <div
+                            class="flex h-24 w-full items-center justify-center rounded-xl border border-slate-200 bg-white sm:w-40">
                             <span class="text-center text-sm text-slate-500">
                                 Venue Map<br>
                                 <span class="text-xs">Location Preview</span>
@@ -452,46 +455,32 @@
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
 
                             <div>
-                                <label for="regular-price"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="regular-price" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Price per Ticket (EGP)
                                 </label>
 
-                                <input type="number"
-                                       id="regular-price"
-                                       name="regular-price"
-                                       min="0"
-                                       placeholder="450"
-                                       required
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="regular-price" name="regular-price" min="0" placeholder="450"
+                                    required
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                             <div>
-                                <label for="regular-quantity"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="regular-quantity" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Available Quantity
                                 </label>
 
-                                <input type="number"
-                                       id="regular-quantity"
-                                       name="regular-quantity"
-                                       min="1"
-                                       placeholder="800"
-                                       required
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="regular-quantity" name="regular-quantity" min="1"
+                                    placeholder="800" required
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                             <div>
-                                <label for="regular-total"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="regular-total" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Subtotal Potential (EGP)
                                 </label>
 
-                                <input type="number"
-                                       id="regular-total"
-                                       name="regular-total"
-                                       placeholder="360000"
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="regular-total" name="regular-total" placeholder="360000"
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                         </div>
@@ -516,46 +505,31 @@
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
 
                             <div>
-                                <label for="vip-price"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="vip-price" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Price per Ticket (EGP)
                                 </label>
 
-                                <input type="number"
-                                       id="vip-price"
-                                       name="vip-price"
-                                       min="0"
-                                       placeholder="950"
-                                       required
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="vip-price" name="vip-price" min="0" placeholder="950" required
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                             <div>
-                                <label for="vip-quantity"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="vip-quantity" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Available Quantity
                                 </label>
 
-                                <input type="number"
-                                       id="vip-quantity"
-                                       name="vip-quantity"
-                                       min="1"
-                                       placeholder="250"
-                                       required
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="vip-quantity" name="vip-quantity" min="1" placeholder="250"
+                                    required
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                             <div>
-                                <label for="vip-total"
-                                       class="mb-2 block text-xs font-semibold text-slate-600">
+                                <label for="vip-total" class="mb-2 block text-xs font-semibold text-slate-600">
                                     Subtotal Potential (EGP)
                                 </label>
 
-                                <input type="number"
-                                       id="vip-total"
-                                       name="vip-total"
-                                       placeholder="237500"
-                                       class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                                <input type="number" id="vip-total" name="vip-total" placeholder="237500"
+                                    class="w-full rounded-full bg-white px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                             </div>
 
                         </div>
@@ -563,7 +537,7 @@
                     </div>
 
                     <button type="button"
-                            class="mt-4 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold hover:bg-slate-200">
+                        class="mt-4 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold hover:bg-slate-200">
                         + Add Another Ticket Tier
                     </button>
 
@@ -581,13 +555,12 @@
                     <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
                         <div>
-                            <label for="hero-poster"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="hero-poster" class="mb-2 block text-sm font-semibold">
                                 Landscape Hero Poster (16:9)
                             </label>
 
                             <label for="hero-poster"
-                                   class="flex min-h-44 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition-colors hover:bg-slate-100">
+                                class="flex min-h-44 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition-colors hover:bg-slate-100">
 
                                 <span class="mb-3 text-3xl text-slate-400">↑</span>
 
@@ -597,22 +570,18 @@
                                     PNG, JPG or WEBP
                                 </span>
 
-                                <input type="file"
-                                       id="hero-poster"
-                                       name="hero-poster"
-                                       accept="image/png,image/jpeg,image/webp"
-                                       class="sr-only">
+                                <input type="file" id="hero-poster" name="hero-poster"
+                                    accept="image/png,image/jpeg,image/webp" class="sr-only">
                             </label>
                         </div>
 
                         <div>
-                            <label for="square-poster"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="square-poster" class="mb-2 block text-sm font-semibold">
                                 Square Discovery Poster (1:1)
                             </label>
 
                             <label for="square-poster"
-                                   class="flex min-h-44 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition-colors hover:bg-slate-100">
+                                class="flex min-h-44 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-5 text-center transition-colors hover:bg-slate-100">
 
                                 <span class="mb-3 text-3xl text-slate-400">↑</span>
 
@@ -622,17 +591,15 @@
                                     PNG, JPG or WEBP
                                 </span>
 
-                                <input type="file"
-                                       id="square-poster"
-                                       name="square-poster"
-                                       accept="image/png,image/jpeg,image/webp"
-                                       class="sr-only">
+                                <input type="file" id="square-poster" name="square-poster"
+                                    accept="image/png,image/jpeg,image/webp" class="sr-only">
                             </label>
                         </div>
 
                     </div>
 
-                    <div class="mt-5 flex flex-col justify-between gap-3 rounded-xl bg-slate-100 p-4 sm:flex-row sm:items-center">
+                    <div
+                        class="mt-5 flex flex-col justify-between gap-3 rounded-xl bg-slate-100 p-4 sm:flex-row sm:items-center">
                         <div>
                             <h3 class="font-semibold">Venue Seating Layout</h3>
                             <p class="mt-1 text-sm text-slate-500">
@@ -641,7 +608,7 @@
                         </div>
 
                         <button type="button"
-                                class="shrink-0 rounded-full bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-200">
+                            class="shrink-0 rounded-full bg-white px-4 py-2 text-sm font-semibold hover:bg-slate-200">
                             Configure Map
                         </button>
                     </div>
@@ -659,41 +626,30 @@
                     <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
 
                         <div>
-                            <label for="organizer-name"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="organizer-name" class="mb-2 block text-sm font-semibold">
                                 Organizer Name
                             </label>
 
-                            <input type="text"
-                                   id="organizer-name"
-                                   name="organizer-name"
-                                   required
-                                   class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="text" id="organizer-name" name="organizer-name" required
+                                class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                         <div>
-                            <label for="organizer-email"
-                                   class="mb-2 block text-sm font-semibold">
+                            <label for="organizer-email" class="mb-2 block text-sm font-semibold">
                                 Contact Email
                             </label>
 
-                            <input type="email"
-                                   id="organizer-email"
-                                   name="organizer-email"
-                                   required
-                                   class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+                            <input type="email" id="organizer-email" name="organizer-email" required
+                                class="w-full rounded-full bg-slate-100 px-4 py-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
                         </div>
 
                     </div>
 
                     <label for="legal-confirmation"
-                           class="mt-5 flex items-start gap-3 text-sm leading-6 text-slate-600">
+                        class="mt-5 flex items-start gap-3 text-sm leading-6 text-slate-600">
 
-                        <input type="checkbox"
-                               id="legal-confirmation"
-                               name="legal-confirmation"
-                               required
-                               class="mt-1 h-4 w-4 shrink-0 accent-amber-500">
+                        <input type="checkbox" id="legal-confirmation" name="legal-confirmation" required
+                            class="mt-1 h-4 w-4 shrink-0 accent-amber-500">
 
                         <span>
                             I confirm that the event details are accurate and that I have
@@ -706,12 +662,12 @@
 
                 <div class="flex flex-col gap-3 sm:flex-row sm:justify-end">
                     <button type="button"
-                            class="rounded-full border border-slate-200 bg-white px-6 py-3 font-semibold hover:bg-slate-100">
+                        class="rounded-full border border-slate-200 bg-white px-6 py-3 font-semibold hover:bg-slate-100">
                         Save Draft
                     </button>
 
                     <button type="submit" form="create-event-form"
-                            class="rounded-full bg-amber-400 px-6 py-3 font-bold text-slate-950 hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">
+                        class="rounded-full bg-amber-400 px-6 py-3 font-bold text-slate-950 hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">
                         Submit Event for Review →
                     </button>
                 </div>
@@ -732,11 +688,8 @@
                         </span>
                     </div>
 
-                    <img
-                        src="../assets/event-preview.jpg"
-                        alt="Concert crowd at a live event"
-                        class="h-44 w-full rounded-xl object-cover"
-                    >
+                    <img src="../assets/event-preview.jpg" alt="Concert crowd at a live event"
+                        class="h-44 w-full rounded-xl object-cover">
 
                     <div class="py-4">
                         <h3 class="font-bold">Your Event Title</h3>
@@ -757,7 +710,7 @@
                         </div>
 
                         <button type="button"
-                                class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold hover:bg-amber-300">
+                            class="rounded-full bg-amber-400 px-4 py-2 text-sm font-bold hover:bg-amber-300">
                             Get Tickets
                         </button>
                     </div>
@@ -837,7 +790,7 @@
                     </ul>
 
                     <button type="submit" form="create-event-form"
-                            class="mt-5 w-full rounded-full bg-amber-400 px-4 py-3 font-bold text-slate-950 hover:bg-amber-300">
+                        class="mt-5 w-full rounded-full bg-amber-400 px-4 py-3 font-bold text-slate-950 hover:bg-amber-300">
                         Submit Event for Review
                     </button>
 
@@ -896,7 +849,7 @@
                 </p>
 
                 <a href="mailto:support@entrada.example"
-                   class="mt-3 inline-block font-semibold text-amber-800 hover:underline">
+                    class="mt-3 inline-block font-semibold text-amber-800 hover:underline">
                     Email Support
                 </a>
             </div>
@@ -910,4 +863,5 @@
     </footer>
 
 </body>
+
 </html>

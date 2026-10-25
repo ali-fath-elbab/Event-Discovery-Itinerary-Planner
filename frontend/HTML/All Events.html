@@ -15,8 +15,11 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="../CSS/tailwind.generated.css">
 
+  <link rel="stylesheet" href="../CSS/Home.css">
   <style>
     body {
       font-family: "Inter", system-ui, sans-serif;
@@ -55,45 +58,54 @@
   </a>
 
   <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-      <a href="Home.html" class="flex shrink-0 items-center gap-2" aria-label="ENTRADA home">
-        <span class="grid h-9 w-9 place-items-center rounded-lg bg-slate-900 text-lg font-black text-amber-400"
-              aria-hidden="true">E</span>
-        <span class="text-lg font-extrabold tracking-tight">ENTRADA</span>
-      </a>
+    <nav class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
 
-      <div role="search" class="hidden max-w-md flex-1 md:block">
-        <label for="site-search" class="sr-only">Search events, artists, and venues</label>
-        <div class="relative">
-          <span class="material-symbols-outlined pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-xl text-slate-500"
-                aria-hidden="true">search</span>
-          <input id="site-search" type="search" name="q"
-                 placeholder="Search events, artists, and venues..."
-                 class="w-full rounded-full border border-slate-200 bg-slate-100 py-2.5 pl-11 pr-4 text-sm text-slate-900 placeholder:text-slate-600 focus:border-amber-400 focus:bg-white">
+            <div class="flex items-center gap-6">
+                <a href="Home.html" class="flex items-center gap-2.5 group">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-sm group-hover:bg-amber-500 transition">
+                        <i class="fa-solid fa-ticket text-lg"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+                </a>
+
+                <div class="hidden md:flex items-center relative w-72 lg:w-96">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400 text-xs"></i>
+                    <input type="text" placeholder="Search events, artists, and venues..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-gray-50 border border-gray-200 text-xs text-slate-800 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-amber-400 focus:bg-white transition">
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 sm:gap-6">
+                <div class="hidden lg:flex items-center gap-6 text-xs font-semibold text-gray-600">
+                    <a href="Home.html" class="hover:text-slate-950 transition">Home</a>
+                    <a href="All Events.html" class="hover:text-slate-950 transition">Events</a>
+                    <a href="DashBoard.html" class="hover:text-slate-950 transition">Dashboard</a>
+                    <span class="text-gray-300">|</span>
+                    <div class="flex items-center gap-1.5 cursor-pointer text-gray-500 hover:text-slate-950 transition">
+                        <span>EN</span>
+                        <span class="text-gray-300">/</span>
+                        <span>AR</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2.5">
+                    <a href="./Register.html"
+                        class="px-5 py-2.5 rounded-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+                        title="Go to Dashboard / Login">
+                        <span>Login / Register</span>
+                    </a>
+                    <a href="./Profile.html"
+                        class="w-9 h-9 rounded-full border border-gray-200 bg-white hover:bg-gray-50 flex items-center justify-center text-slate-700 transition"
+                        title="User Profile & Dashboard">
+                        <i class="fa-regular fa-user text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <nav class="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
-        <a href="Home.html" class="text-sm font-medium text-slate-600 hover:text-slate-900">Home</a>
-        <a href="All Events.html" aria-current="page" class="text-sm font-bold text-slate-900">Events</a>
-        <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">Outlets</a>
-        <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">Support &amp; Contact</a>
-      </nav>
-
-      <div class="flex shrink-0 items-center gap-3">
-        <nav class="hidden items-center gap-1 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold sm:flex"
-             aria-label="Language">
-          <a href="#" aria-current="page" class="text-slate-900">EN</a>
-          <span class="text-slate-400" aria-hidden="true">/</span>
-          <a href="#" class="text-slate-600 hover:text-slate-900">AR</a>
         </nav>
-
-        <a href="Login.html"
-           class="rounded-full bg-amber-400 px-5 py-2.5 text-sm font-bold text-slate-950 shadow-sm hover:bg-amber-300">
-          Login / Register
-        </a>
-      </div>
-    </div>
   </header>
 
   <main id="main-content">
