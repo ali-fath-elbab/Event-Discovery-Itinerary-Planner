@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Book tickets for Playcrowd: Vol. 02 at Teatro 90, Point 90 Mall, New Cairo on October 23, 2026.">
+  <meta name="description"
+    content="Book tickets for Playcrowd: Vol. 02 at Teatro 90, Point 90 Mall, New Cairo on October 23, 2026.">
   <title>Playcrowd: Vol. 02 at Teatro 90 | ENTRADA</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet">
 
   <link rel="stylesheet" href="../CSS/tailwind.generated.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/Home.css">
 </head>
 
 <body class="bg-slate-50 font-sans text-slate-900 antialiased">
   <a href="#main-content"
-     class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-amber-400 focus:px-5 focus:py-2.5 focus:text-sm focus:font-bold focus:text-slate-950">
+    class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-amber-400 focus:px-5 focus:py-2.5 focus:text-sm focus:font-bold focus:text-slate-950">
     Skip to main content
   </a>
 
   <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-      <a href="Home.html" class="flex shrink-0 items-center gap-2" aria-label="ENTRADA home">
-        <span class="grid h-9 w-9 place-items-center rounded-lg bg-slate-900 text-lg font-black text-amber-400"
-              aria-hidden="true">E</span>
-        <span class="text-lg font-extrabold tracking-tight">ENTRADA</span>
-      </a>
+      <nav class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
 
-      <div role="search" class="hidden max-w-md flex-1 md:block">
-        <label for="site-search" class="sr-only">Search events, artists, and venues</label>
-        <div class="relative">
-          <span class="material-symbols-outlined pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-xl text-slate-500"
-                aria-hidden="true">search</span>
-          <input id="site-search" type="search" name="q"
-                 placeholder="Search events, artists, and venues..."
-                 class="w-full rounded-full border border-slate-200 bg-slate-100 py-2.5 pl-11 pr-4 text-sm text-slate-900 placeholder:text-slate-600 focus:border-amber-400 focus:bg-white focus:outline-none">
+          <div class="flex items-center gap-6">
+            <a href="Home.html" class="flex items-center gap-2.5 group">
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-sm group-hover:bg-amber-500 transition">
+                <i class="fa-solid fa-ticket text-lg"></i>
+              </div>
+              <span class="text-xl font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+            </a>
+
+            <div class="hidden md:flex items-center relative w-72 lg:w-96">
+              <i class="fa-solid fa-magnifying-glass absolute left-4 text-gray-400 text-xs"></i>
+              <input type="text" placeholder="Search events, artists, and venues..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-gray-50 border border-gray-200 text-xs text-slate-800 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-amber-400 focus:bg-white transition">
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 sm:gap-6">
+            <div class="hidden lg:flex items-center gap-6 text-xs font-semibold text-gray-600">
+              <a href="All Events.html" class="hover:text-slate-950 transition">Events</a>
+              <a href="DashBoard.html" class="hover:text-slate-950 transition">Dashboard</a>
+              <a href="Create Event.html" class="hover:text-slate-950 transition">Create Event</a>
+              <span class="text-gray-300">|</span>
+              <div class="flex items-center gap-1.5 cursor-pointer text-gray-500 hover:text-slate-950 transition">
+                <span>EN</span>
+                <span class="text-gray-300">/</span>
+                <span>AR</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <a href="./Register.html"
+                class="px-5 py-2.5 rounded-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-sm transition active:scale-95"
+                title="Go to Dashboard / Login">
+                <span>Login / Register</span>
+              </a>
+              <a href="./Profile.html"
+                class="w-9 h-9 rounded-full border border-gray-200 bg-white hover:bg-gray-50 flex items-center justify-center text-slate-700 transition"
+                title="User Profile & Dashboard">
+                <i class="fa-regular fa-user text-xs"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <nav class="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
-        <a href="Home.html" class="text-sm font-medium text-slate-600 hover:text-slate-900">Home</a>
-        <a href="All Events.html" aria-current="page" class="text-sm font-bold text-slate-900">Events</a>
-        <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">Outlets</a>
-        <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900">Support &amp; Contact</a>
       </nav>
-
-      <div class="flex shrink-0 items-center gap-3">
-        <nav class="hidden items-center gap-1 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold sm:flex"
-             aria-label="Language">
-          <a href="#" aria-current="page" class="text-slate-900">EN</a>
-          <span class="text-slate-400" aria-hidden="true">/</span>
-          <a href="#" class="text-slate-600 hover:text-slate-900">AR</a>
-        </nav>
-
-        <a href="Login.html"
-           class="rounded-full bg-amber-400 px-5 py-2.5 text-sm font-bold text-slate-950 shadow-sm hover:bg-amber-300">
-          Login / Register
-        </a>
-      </div>
     </div>
   </header>
 
@@ -80,7 +94,8 @@
             <li aria-hidden="true" class="text-slate-400">/</li>
             <li><a href="All Events.html" class="hover:text-slate-900">Concerts &amp; Comedy</a></li>
             <li aria-hidden="true" class="text-slate-400">/</li>
-            <li><span aria-current="page" class="font-semibold text-slate-900">Playcrowd: Vol. 02 at Teatro 90</span></li>
+            <li><span aria-current="page" class="font-semibold text-slate-900">Playcrowd: Vol. 02 at Teatro 90</span>
+            </li>
           </ol>
         </nav>
 
@@ -90,8 +105,8 @@
             Online Ticketing Active
           </p>
           <button type="button" id="share-btn"
-                  class="flex items-center gap-1 rounded-full px-2 py-1 text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                  aria-label="Share this event">
+            class="flex items-center gap-1 rounded-full px-2 py-1 text-xs font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+            aria-label="Share this event">
             <span class="material-symbols-outlined text-lg" aria-hidden="true">share</span>
             <span class="hidden sm:inline">Share</span>
           </button>
@@ -99,18 +114,15 @@
       </div>
     </div>
 
-    <section aria-labelledby="event-title"
-             class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+    <section aria-labelledby="event-title" class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       <div class="grid overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:grid-cols-12">
 
         <div class="relative min-h-[360px] overflow-hidden bg-slate-900 lg:col-span-5 lg:min-h-[520px]">
-          <img
-            src="../assets/IMAGES/Ramy Sabry home.jpg"
-            alt="20 Years of Ramy Sabry"
+          <img src="../assets/IMAGES/Ramy Sabry home.jpg" alt="20 Years of Ramy Sabry"
             class="absolute inset-0 h-full w-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-slate-950/10"></div>
 
-      
+
 
           <div class="absolute inset-x-5 bottom-6 text-white sm:inset-x-6">
             <p class="mt-1 text-xl font-extrabold leading-tight">20 Years of Ramy Sabry &amp; Special Guests</p>
@@ -147,7 +159,7 @@
             <div class="mt-6 grid gap-4 rounded-xl bg-slate-50 p-4 sm:grid-cols-2">
               <div class="flex items-start gap-3">
                 <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-amber-700 shadow-sm"
-                      aria-hidden="true">
+                  aria-hidden="true">
                   <span class="material-symbols-outlined text-xl">calendar_today</span>
                 </span>
                 <div>
@@ -158,8 +170,9 @@
               </div>
 
               <div class="flex items-start gap-3">
-                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-emerald-700 shadow-sm"
-                      aria-hidden="true">
+                <span
+                  class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-emerald-700 shadow-sm"
+                  aria-hidden="true">
                   <span class="material-symbols-outlined text-xl">location_on</span>
                 </span>
                 <div>
@@ -188,14 +201,14 @@
 
             <div class="flex items-center gap-3">
               <a href="#ticket-tiers"
-                 class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-amber-400 px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-sm hover:bg-amber-300">
+                class="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-amber-400 px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-sm hover:bg-amber-300">
                 <span class="material-symbols-outlined text-xl" aria-hidden="true">confirmation_number</span>
                 Select Tickets
               </a>
               <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Playcrowd%3A%20Vol.%2002%20at%20Teatro%2090&amp;dates=20261023T170000Z/20261023T190000Z&amp;location=Teatro%2090%2C%20Point%2090%20Mall%2C%20New%20Cairo"
-                 target="_blank" rel="noopener"
-                 class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-white text-slate-900 shadow-sm hover:bg-slate-100"
-                 aria-label="Add this event to Google Calendar (opens in a new tab)">
+                target="_blank" rel="noopener"
+                class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-white text-slate-900 shadow-sm hover:bg-slate-100"
+                aria-label="Add this event to Google Calendar (opens in a new tab)">
                 <span class="material-symbols-outlined text-xl" aria-hidden="true">event_available</span>
               </a>
             </div>
@@ -205,13 +218,14 @@
     </section>
 
     <section id="ticket-tiers" aria-labelledby="ticket-heading"
-             class="mx-auto max-w-7xl scroll-mt-24 px-4 py-8 sm:px-6 lg:px-8">
+      class="mx-auto max-w-7xl scroll-mt-24 px-4 py-8 sm:px-6 lg:px-8">
       <div class="mb-8 flex items-center justify-between gap-4">
         <div>
           <p class="text-xs font-bold uppercase tracking-wider text-amber-700">Reservation Step 1 of 2</p>
           <h2 id="ticket-heading" class="mt-1 text-2xl font-black text-slate-900 sm:text-3xl">Select Ticket Tiers</h2>
         </div>
-        <p class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm sm:flex">
+        <p
+          class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm sm:flex">
           <span class="material-symbols-outlined text-lg text-emerald-600" aria-hidden="true">verified_user</span>
           SSL Encrypted Checkout
         </p>
@@ -220,18 +234,18 @@
       <div class="grid items-start gap-8 lg:grid-cols-12">
         <div class="flex flex-col gap-4 lg:col-span-7">
 
-          <article aria-labelledby="tier1-name"
-                   class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <article aria-labelledby="tier1-name" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div class="flex items-start gap-4">
                 <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-slate-100 text-slate-800"
-                      aria-hidden="true">
+                  aria-hidden="true">
                   <span class="material-symbols-outlined text-2xl">directions_walk</span>
                 </span>
                 <div>
                   <div class="flex flex-wrap items-center gap-2">
                     <h3 id="tier1-name" class="text-lg font-bold text-slate-900">Regular Standing / Mezzanine</h3>
-                    <span class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Standard</span>
+                    <span
+                      class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Standard</span>
                   </div>
                   <p class="mt-1 text-sm text-slate-600">
                     General Admission access to mezzanine tier. Unreserved open standing and elevated sightline.
@@ -253,16 +267,15 @@
                   <span class="block text-xs text-slate-600">incl. VAT</span>
                 </p>
                 <div role="group" aria-label="Regular Standing / Mezzanine quantity"
-                     class="flex items-center rounded-full bg-slate-100 p-1">
+                  class="flex items-center rounded-full bg-slate-100 p-1">
                   <button type="button" data-tier="tier1" data-step="-1" id="dec-tier1" disabled
-                          aria-label="Remove one Regular Standing ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
+                    aria-label="Remove one Regular Standing ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">remove</span>
                   </button>
                   <span id="qty-tier1" class="w-8 text-center text-sm font-bold">0</span>
-                  <button type="button" data-tier="tier1" data-step="1"
-                          aria-label="Add one Regular Standing ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
+                  <button type="button" data-tier="tier1" data-step="1" aria-label="Add one Regular Standing ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">add</span>
                   </button>
                 </div>
@@ -271,21 +284,23 @@
           </article>
 
           <article aria-labelledby="tier2-name"
-                   class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-md ring-2 ring-amber-400">
-            <p class="absolute right-0 top-0 rounded-bl-xl bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-slate-950">
+            class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-md ring-2 ring-amber-400">
+            <p
+              class="absolute right-0 top-0 rounded-bl-xl bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-slate-950">
               Most Popular
             </p>
 
             <div class="mt-2 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div class="flex items-start gap-4">
                 <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-amber-100 text-amber-800"
-                      aria-hidden="true">
+                  aria-hidden="true">
                   <span class="material-symbols-outlined text-2xl">chair</span>
                 </span>
                 <div>
                   <div class="flex flex-wrap items-center gap-2">
                     <h3 id="tier2-name" class="text-lg font-bold text-slate-900">Golden Circle / Silver Seated</h3>
-                    <span class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Reserved Seat</span>
+                    <span class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Reserved
+                      Seat</span>
                   </div>
                   <p class="mt-1 text-sm text-slate-600">
                     Guaranteed theater seat in central acoustic tier closer to stage. Optimum comedy viewing angle.
@@ -307,16 +322,15 @@
                   <span class="block text-xs text-slate-600">incl. VAT</span>
                 </p>
                 <div role="group" aria-label="Golden Circle / Silver Seated quantity"
-                     class="flex items-center rounded-full bg-slate-100 p-1">
+                  class="flex items-center rounded-full bg-slate-100 p-1">
                   <button type="button" data-tier="tier2" data-step="-1" id="dec-tier2"
-                          aria-label="Remove one Golden Circle ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
+                    aria-label="Remove one Golden Circle ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">remove</span>
                   </button>
                   <span id="qty-tier2" class="w-8 text-center text-sm font-bold">2</span>
-                  <button type="button" data-tier="tier2" data-step="1"
-                          aria-label="Add one Golden Circle ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
+                  <button type="button" data-tier="tier2" data-step="1" aria-label="Add one Golden Circle ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">add</span>
                   </button>
                 </div>
@@ -324,18 +338,19 @@
             </div>
           </article>
 
-          <article aria-labelledby="tier3-name"
-                   class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <article aria-labelledby="tier3-name" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div class="flex items-start gap-4">
                 <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-slate-100 text-slate-800"
-                      aria-hidden="true">
+                  aria-hidden="true">
                   <span class="material-symbols-outlined text-2xl">star</span>
                 </span>
                 <div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <h3 id="tier3-name" class="text-lg font-bold text-slate-900">VIP Stage Front &amp; Lounge Access</h3>
-                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-amber-900">VIP Premium</span>
+                    <h3 id="tier3-name" class="text-lg font-bold text-slate-900">VIP Stage Front &amp; Lounge Access
+                    </h3>
+                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-amber-900">VIP
+                      Premium</span>
                   </div>
                   <p class="mt-1 text-sm text-slate-600">
                     Front row table seating, fast-track entrance, complimentary welcome drink, and Teatro Lounge access.
@@ -357,16 +372,15 @@
                   <span class="block text-xs text-slate-600">incl. VAT</span>
                 </p>
                 <div role="group" aria-label="VIP Stage Front and Lounge Access quantity"
-                     class="flex items-center rounded-full bg-slate-100 p-1">
+                  class="flex items-center rounded-full bg-slate-100 p-1">
                   <button type="button" data-tier="tier3" data-step="-1" id="dec-tier3" disabled
-                          aria-label="Remove one VIP ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
+                    aria-label="Remove one VIP ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200 disabled:opacity-40">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">remove</span>
                   </button>
                   <span id="qty-tier3" class="w-8 text-center text-sm font-bold">0</span>
-                  <button type="button" data-tier="tier3" data-step="1"
-                          aria-label="Add one VIP ticket"
-                          class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
+                  <button type="button" data-tier="tier3" data-step="1" aria-label="Add one VIP ticket"
+                    class="grid h-8 w-8 place-items-center rounded-full bg-white text-slate-900 hover:bg-slate-200">
                     <span class="material-symbols-outlined text-base" aria-hidden="true">add</span>
                   </button>
                 </div>
@@ -384,8 +398,10 @@
               </p>
             </div>
 
-            <div id="cart-empty" hidden class="flex flex-col items-center justify-center py-8 text-center text-slate-600">
-              <span class="material-symbols-outlined mb-2 text-4xl text-slate-400" aria-hidden="true">shopping_bag</span>
+            <div id="cart-empty" hidden
+              class="flex flex-col items-center justify-center py-8 text-center text-slate-600">
+              <span class="material-symbols-outlined mb-2 text-4xl text-slate-400"
+                aria-hidden="true">shopping_bag</span>
               <p class="font-medium text-slate-900">No tickets selected yet</p>
               <p class="mt-1 max-w-xs text-sm">Use the ticket counters on the left to begin your checkout.</p>
             </div>
@@ -406,7 +422,7 @@
                 <span class="flex items-center gap-1">
                   Processing &amp; Service Fee
                   <span class="material-symbols-outlined text-sm text-slate-600"
-                        title="Fixed ticketing platform transaction fee" aria-hidden="true">info</span>
+                    title="Fixed ticketing platform transaction fee" aria-hidden="true">info</span>
                   <span class="sr-only">Fixed ticketing platform transaction fee</span>
                 </span>
                 <span id="summary-fee" class="font-semibold text-slate-900">EGP 60</span>
@@ -421,7 +437,7 @@
             </div>
 
             <a id="checkout-link" href="Checkout.html"
-               class="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-amber-400 px-5 py-4 text-sm font-extrabold text-slate-950 shadow-sm hover:bg-amber-300">
+              class="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-amber-400 px-5 py-4 text-sm font-extrabold text-slate-950 shadow-sm hover:bg-amber-300">
               <span id="checkout-text">Proceed with 2 Tickets &bull; EGP 1,560</span>
               <span class="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
             </a>
@@ -430,7 +446,8 @@
               <span class="material-symbols-outlined text-2xl text-emerald-700" aria-hidden="true">verified</span>
               <span>
                 <span class="block text-xs font-bold text-slate-900">100% Guaranteed Official Tickets</span>
-                <span class="block text-xs text-slate-600">Authentic barcode delivered directly from the organizer.</span>
+                <span class="block text-xs text-slate-600">Authentic barcode delivered directly from the
+                  organizer.</span>
               </span>
             </p>
 
@@ -458,15 +475,17 @@
 
         <div role="tablist" aria-label="Event information" class="mb-8 flex items-center gap-3 overflow-x-auto pb-2">
           <button type="button" role="tab" id="tab-about" aria-selected="true" aria-controls="panel-about" tabindex="0"
-                  class="whitespace-nowrap rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white">
+            class="whitespace-nowrap rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white">
             About the Event
           </button>
-          <button type="button" role="tab" id="tab-venue" aria-selected="false" aria-controls="panel-venue" tabindex="-1"
-                  class="whitespace-nowrap rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">
+          <button type="button" role="tab" id="tab-venue" aria-selected="false" aria-controls="panel-venue"
+            tabindex="-1"
+            class="whitespace-nowrap rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">
             Venue &amp; Seating Plan
           </button>
-          <button type="button" role="tab" id="tab-rules" aria-selected="false" aria-controls="panel-rules" tabindex="-1"
-                  class="whitespace-nowrap rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">
+          <button type="button" role="tab" id="tab-rules" aria-selected="false" aria-controls="panel-rules"
+            tabindex="-1"
+            class="whitespace-nowrap rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">
             Rules &amp; Regulations
           </button>
         </div>
@@ -478,12 +497,14 @@
                 20 Years of Ramy Sabry
               </h3>
               <p class="mt-4 text-base leading-relaxed text-slate-600">
-                Celebrate two decades of music, memories, and unforgettable hits with Egyptian superstar <strong>Ramy Sabry</strong>. Join us for a spectacular live concert
-              featuring the songs that shaped his musical journey and made him one of Egypt’s most beloved artists.
+                Celebrate two decades of music, memories, and unforgettable hits with Egyptian superstar <strong>Ramy
+                  Sabry</strong>. Join us for a spectacular live concert
+                featuring the songs that shaped his musical journey and made him one of Egypt’s most beloved artists.
               </p>
               <p class="mt-3 text-sm leading-relaxed text-slate-600">
-                Experience an extraordinary night filled with emotion, energy, and your favorite hits, celebrating <strong>20 years</strong>
-                 of musical excellence with special guests and an unforgettable live performance.
+                Experience an extraordinary night filled with emotion, energy, and your favorite hits, celebrating
+                <strong>20 years</strong>
+                of musical excellence with special guests and an unforgettable live performance.
               </p>
 
               <div class="mt-6 grid gap-4 sm:grid-cols-3">
@@ -498,7 +519,8 @@
                   <p class="text-sm text-slate-600">To Be Announced</p>
                 </div>
                 <div class="rounded-xl bg-slate-50 p-4">
-                  <span class="material-symbols-outlined text-3xl text-slate-700" aria-hidden="true">theater_comedy</span>
+                  <span class="material-symbols-outlined text-3xl text-slate-700"
+                    aria-hidden="true">theater_comedy</span>
                   <h4 class="mt-2 text-base font-bold text-slate-900">Live Music Band</h4>
                   <p class="text-sm text-slate-600">An Electrifying Live Musical Experience</p>
                 </div>
@@ -545,12 +567,14 @@
 
           <div class="mt-6 overflow-hidden rounded-2xl bg-slate-900 p-6 text-white sm:p-10">
             <div class="mx-auto flex max-w-xl flex-col items-center">
-              <p class="w-3/4 rounded-xl bg-amber-400 py-3 text-center text-base font-black uppercase tracking-widest text-slate-950 shadow-lg">
+              <p
+                class="w-3/4 rounded-xl bg-amber-400 py-3 text-center text-base font-black uppercase tracking-widest text-slate-950 shadow-lg">
                 Main Stage
               </p>
 
               <div class="mt-8 w-full rounded-xl bg-amber-400/20 p-4 text-center">
-                <p class="text-xs font-bold uppercase tracking-wide text-amber-200">VIP Stage Front &amp; Tables (Tier 3)</p>
+                <p class="text-xs font-bold uppercase tracking-wide text-amber-200">VIP Stage Front &amp; Tables (Tier
+                  3)</p>
                 <div class="mt-2 flex justify-center gap-2" aria-hidden="true">
                   <span class="h-3 w-3 rounded-full bg-amber-300"></span>
                   <span class="h-3 w-3 rounded-full bg-amber-300"></span>
@@ -563,7 +587,8 @@
               </div>
 
               <div class="mt-4 w-full rounded-xl bg-slate-700/60 p-4 text-center">
-                <p class="text-xs font-bold uppercase tracking-wide text-slate-100">Golden Circle &bull; Silver Tier (Tier 2)</p>
+                <p class="text-xs font-bold uppercase tracking-wide text-slate-100">Golden Circle &bull; Silver Tier
+                  (Tier 2)</p>
                 <div class="mx-auto mt-2 grid max-w-xs grid-cols-8 gap-1.5" aria-hidden="true">
                   <span class="h-2 rounded bg-slate-300"></span>
                   <span class="h-2 rounded bg-slate-300"></span>
@@ -577,11 +602,13 @@
               </div>
 
               <div class="mt-4 w-full rounded-xl bg-slate-700/40 p-4 text-center">
-                <p class="text-xs font-bold uppercase tracking-wide text-slate-100">Regular Mezzanine &bull; Standing Zone (Tier 1)</p>
+                <p class="text-xs font-bold uppercase tracking-wide text-slate-100">Regular Mezzanine &bull; Standing
+                  Zone (Tier 1)</p>
                 <p class="mt-1 text-sm text-slate-300">Elevated rear standing platform &bull; Unrestricted sightline</p>
               </div>
 
-              <div class="mt-6 flex w-full flex-wrap justify-between gap-3 border-t border-slate-700 pt-4 text-sm text-slate-300">
+              <div
+                class="mt-6 flex w-full flex-wrap justify-between gap-3 border-t border-slate-700 pt-4 text-sm text-slate-300">
                 <p class="flex items-center gap-1">
                   <span class="material-symbols-outlined text-lg" aria-hidden="true">door_front</span>
                   Gate A (VIP Fast Track)
@@ -600,18 +627,21 @@
               <p class="text-sm text-slate-600">Teatro 90 &bull; 2nd Floor</p>
             </div>
 
-            <div class="relative mt-3 flex h-72 items-end overflow-hidden rounded-2xl bg-slate-900 bg-cover bg-center p-4"
-                 style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3498W0ALEdX4nSfWdrBDCmzx0-n7YhYYnl-PYwOWNBiFXLLhOMuju3kaegn7LWrFze1_bREiHcX3dQbP_Oyoo8h3_my1cfDUvRA3mIx54oAnc4moWv0auQ6xjvSMN-nfN__Bk9UGJf4b3wVb_YvYuiEEY_rL4gH2sOZw7EVPKz9TN_xAXFEkZs4IEuVsn0QNZLXgkssD-g7iAm-O94f5cimA1GmMG7A4h-Q63qnkZnzVcc1SbUeWP');">
-              <div class="flex w-full max-w-md flex-wrap items-center justify-between gap-4 rounded-xl bg-white/95 p-4 shadow-lg backdrop-blur">
+            <div
+              class="relative mt-3 flex h-72 items-end overflow-hidden rounded-2xl bg-slate-900 bg-cover bg-center p-4"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3498W0ALEdX4nSfWdrBDCmzx0-n7YhYYnl-PYwOWNBiFXLLhOMuju3kaegn7LWrFze1_bREiHcX3dQbP_Oyoo8h3_my1cfDUvRA3mIx54oAnc4moWv0auQ6xjvSMN-nfN__Bk9UGJf4b3wVb_YvYuiEEY_rL4gH2sOZw7EVPKz9TN_xAXFEkZs4IEuVsn0QNZLXgkssD-g7iAm-O94f5cimA1GmMG7A4h-Q63qnkZnzVcc1SbUeWP');">
+              <div
+                class="flex w-full max-w-md flex-wrap items-center justify-between gap-4 rounded-xl bg-white/95 p-4 shadow-lg backdrop-blur">
                 <div class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-3xl text-amber-700" aria-hidden="true">theater_comedy</span>
+                  <span class="material-symbols-outlined text-3xl text-amber-700"
+                    aria-hidden="true">theater_comedy</span>
                   <div>
                     <p class="font-bold text-slate-900">Teatro 90 Venue</p>
                     <p class="text-sm text-slate-600">Opposite AUC Gate 4, New Cairo</p>
                   </div>
                 </div>
                 <a href="https://maps.google.com" target="_blank" rel="noopener"
-                   class="flex items-center gap-1 rounded-full bg-amber-400 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-amber-300">
+                  class="flex items-center gap-1 rounded-full bg-amber-400 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-amber-300">
                   Directions
                   <span class="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
                   <span class="sr-only">(opens in a new tab)</span>
@@ -629,7 +659,8 @@
 
           <div class="mt-6 grid gap-4 md:grid-cols-2">
             <div class="flex items-start gap-4 rounded-2xl bg-slate-50 p-5">
-              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-red-50 text-red-700" aria-hidden="true">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-red-50 text-red-700"
+                aria-hidden="true">
                 <span class="material-symbols-outlined text-xl">block</span>
               </span>
               <div>
@@ -642,7 +673,8 @@
             </div>
 
             <div class="flex items-start gap-4 rounded-2xl bg-slate-50 p-5">
-              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm" aria-hidden="true">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm"
+                aria-hidden="true">
                 <span class="material-symbols-outlined text-xl">qr_code_scanner</span>
               </span>
               <div>
@@ -655,7 +687,8 @@
             </div>
 
             <div class="flex items-start gap-4 rounded-2xl bg-slate-50 p-5">
-              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm" aria-hidden="true">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm"
+                aria-hidden="true">
                 <span class="material-symbols-outlined text-xl">no_photography</span>
               </span>
               <div>
@@ -668,7 +701,8 @@
             </div>
 
             <div class="flex items-start gap-4 rounded-2xl bg-slate-50 p-5">
-              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm" aria-hidden="true">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-slate-800 shadow-sm"
+                aria-hidden="true">
                 <span class="material-symbols-outlined text-xl">schedule</span>
               </span>
               <div>
@@ -690,26 +724,29 @@
           <p class="text-xs font-bold uppercase tracking-wider text-amber-700">Curated Entertainment</p>
           <h2 id="related-heading" class="mt-1 text-2xl font-black text-slate-900 sm:text-3xl">You May Also Like</h2>
         </div>
-        <a href="All Events.html" class="flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-amber-700">
+        <a href="All Events.html"
+          class="flex items-center gap-1 text-sm font-semibold text-slate-900 hover:text-amber-700">
           View all live events
           <span class="material-symbols-outlined text-lg" aria-hidden="true">chevron_right</span>
         </a>
       </div>
 
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+        <article
+          class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img
-              src="../assets/IMAGES/Angham.jpEg"
-              alt="Angham performing live at the New Capital Opera House"
+            <img src="../assets/IMAGES/Angham.jpEg" alt="Angham performing live at the New Capital Opera House"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">Live Concert</p>
-            <p class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">Nov 4 &bull; 08:00 PM</p>
+            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">Live
+              Concert</p>
+            <p
+              class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">
+              Nov 4 &bull; 08:00 PM</p>
           </div>
           <div class="flex flex-1 flex-col justify-between p-5">
             <div>
               <h3 class="text-lg font-bold text-slate-900">
-Angham: A rose at the opera </h3>
+                Angham: A rose at the opera </h3>
               <p class="mt-1 flex items-center gap-1.5 text-sm text-slate-600">
                 <span class="material-symbols-outlined text-base text-emerald-700" aria-hidden="true">location_on</span>
                 City of arts and culture New Capital Opera House
@@ -721,7 +758,7 @@ Angham: A rose at the opera </h3>
                 <span class="block text-lg font-extrabold text-slate-900">EGP 450</span>
               </p>
               <a href="All Events.html" aria-label="Book Angham at the New Capital Opera House"
-                 class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
+                class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
                 Book Now
                 <span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
               </a>
@@ -729,14 +766,16 @@ Angham: A rose at the opera </h3>
           </div>
         </article>
 
-        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+        <article
+          class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img
-              src="../assets/IMAGES/Aziz.jpg"
-              alt="Comedian performing on a neon-lit stage at Cairo Jazz Club 610"
+            <img src="../assets/IMAGES/Aziz.jpg" alt="Comedian performing on a neon-lit stage at Cairo Jazz Club 610"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">Festival</p>
-            <p class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">Dec 30 &bull; 09:00 PM</p>
+            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">
+              Festival</p>
+            <p
+              class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">
+              Dec 30 &bull; 09:00 PM</p>
           </div>
           <div class="flex flex-1 flex-col justify-between p-5">
             <div>
@@ -752,7 +791,7 @@ Angham: A rose at the opera </h3>
                 <span class="block text-lg font-extrabold text-slate-900">EGP 400</span>
               </p>
               <a href="All Events.html" aria-label="Book Comedy Night with Jimmy and Friends"
-                 class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
+                class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
                 Book Now
                 <span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
               </a>
@@ -760,14 +799,17 @@ Angham: A rose at the opera </h3>
           </div>
         </article>
 
-        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
+        <article
+          class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-lg">
           <div class="relative h-48 overflow-hidden bg-slate-900">
-            <img
-              src="../assets/IMAGES/Cario Jazz.jpg"
+            <img src="../assets/IMAGES/Cario Jazz.jpg"
               alt="Grand Egyptian Museum atrium illuminated at night during an opera gala by Fatma Said"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">Festival</p>
-            <p class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">Oct 18 &bull; 09:00 PM</p>
+            <p class="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-slate-900">
+              Festival</p>
+            <p
+              class="absolute bottom-3 right-3 rounded-full bg-slate-900/90 px-2.5 py-1 text-xs font-medium text-white">
+              Oct 18 &bull; 09:00 PM</p>
           </div>
           <div class="flex flex-1 flex-col justify-between p-5">
             <div>
@@ -783,7 +825,7 @@ Angham: A rose at the opera </h3>
                 <span class="block text-lg font-extrabold text-slate-900">EGP 2,500 - 12K</span>
               </p>
               <a href="All Events.html" aria-label="Book Fatma Said Live at GEM"
-                 class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
+                class="flex items-center gap-1 rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-900 hover:bg-amber-400">
                 Book Now
                 <span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
               </a>
@@ -800,7 +842,7 @@ Angham: A rose at the opera </h3>
         <div>
           <a href="Home.html" class="flex items-center gap-2" aria-label="ENTRADA home">
             <span class="grid h-8 w-8 place-items-center rounded-lg bg-slate-900 text-base font-black text-amber-400"
-                  aria-hidden="true">E</span>
+              aria-hidden="true">E</span>
             <span class="text-base font-extrabold tracking-tight">ENTRADA</span>
           </a>
           <p class="mt-3 max-w-xs text-sm leading-relaxed text-slate-600">
@@ -833,11 +875,13 @@ Angham: A rose at the opera </h3>
             <h2 class="text-base font-bold text-slate-900">Support Helpline</h2>
             <p class="mt-1 text-sm text-slate-600">Dedicated ticket and seat reservation assistance available 24/7.</p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <a href="#" class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-100">
+              <a href="#"
+                class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-100">
                 <span class="material-symbols-outlined text-base text-emerald-700" aria-hidden="true">call</span>
                 Call Center
               </a>
-              <a href="#" class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-100">
+              <a href="#"
+                class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-100">
                 <span class="material-symbols-outlined text-base text-emerald-700" aria-hidden="true">chat</span>
                 Live Chat
               </a>
@@ -846,26 +890,27 @@ Angham: A rose at the opera </h3>
 
           <div class="mt-4 flex items-center gap-3">
             <a href="#" aria-label="ENTRADA on Instagram"
-               class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
+              class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
               <span class="material-symbols-outlined text-lg" aria-hidden="true">photo_camera</span>
             </a>
             <a href="#" aria-label="ENTRADA on Facebook"
-               class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
+              class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
               <span class="material-symbols-outlined text-lg" aria-hidden="true">public</span>
             </a>
             <a href="#" aria-label="ENTRADA offers"
-               class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
+              class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
               <span class="material-symbols-outlined text-lg" aria-hidden="true">tag</span>
             </a>
             <a href="#" aria-label="ENTRADA on TikTok"
-               class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
+              class="grid h-9 w-9 place-items-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900">
               <span class="material-symbols-outlined text-lg" aria-hidden="true">music_note</span>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-sm text-slate-600 sm:flex-row">
+      <div
+        class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-sm text-slate-600 sm:flex-row">
         <p>&copy; ENTRADA 2026 - All rights reserved.</p>
         <nav aria-label="Legal" class="flex flex-wrap items-center gap-6">
           <a href="#" class="hover:text-slate-900">Privacy Policy</a>
@@ -876,4 +921,5 @@ Angham: A rose at the opera </h3>
     </div>
   </footer>
 </body>
+
 </html>

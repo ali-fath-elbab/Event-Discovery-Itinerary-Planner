@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,22 @@
     <title>ENTRADA - Sign In</title>
 
     <link rel="stylesheet" href="../CSS/tailwind.generated.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="min-h-screen bg-white font-sans text-slate-900">
 
     <main class="grid min-h-screen w-full grid-cols-1 overflow-hidden bg-white lg:grid-cols-2">
 
-        <section class="relative flex min-h-[430px] flex-col justify-between overflow-hidden bg-slate-950 px-7 py-8 text-white sm:px-10 sm:py-10 lg:min-h-screen lg:px-12">
+        <section
+            class="relative flex min-h-[430px] flex-col justify-between overflow-hidden bg-slate-950 px-7 py-8 text-white sm:px-10 sm:py-10 lg:min-h-screen lg:px-12">
 
-            <img
-                src="../assets/entrada-auth.jpg"
-                alt=""
-                class="absolute inset-0 h-full w-full object-cover"
-            >
+            <img src="../assets/entrada-auth.jpg" alt="" class="absolute inset-0 h-full w-full object-cover">
 
             <div class="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-slate-950/75 to-slate-900/90"></div>
 
             <div class="relative z-10 flex flex-wrap items-center justify-between gap-3">
-                
+
             </div>
 
             <div class="relative z-10 my-12">
@@ -73,7 +70,8 @@
 
                 <div class="flex items-center gap-3">
 
-                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-amber-400/20 font-bold text-amber-300">
+                    <div
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-amber-400/20 font-bold text-amber-300">
                         EG
                     </div>
 
@@ -131,29 +129,18 @@
                         Email Address
                     </label>
 
-                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
+                    <div
+                        class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
 
-                        <svg
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            class="h-5 w-5 shrink-0 text-slate-500"
-                        >
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            class="h-5 w-5 shrink-0 text-slate-500">
                             <rect x="3" y="5" width="18" height="14" rx="2"></rect>
                             <path d="m3 7 9 6 9-6"></path>
                         </svg>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                            autocomplete="email"
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
                             required
-                            class="w-full min-w-0 bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400"
-                        >
+                            class="w-full min-w-0 bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400">
 
                     </div>
 
@@ -165,29 +152,18 @@
                         Password
                     </label>
 
-                    <div class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
+                    <div
+                        class="flex items-center gap-3 rounded-full bg-slate-100 px-4 py-3 transition-colors focus-within:ring-2 focus-within:ring-amber-400">
 
-                        <svg
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            class="h-5 w-5 shrink-0 text-slate-500"
-                        >
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            class="h-5 w-5 shrink-0 text-slate-500">
                             <circle cx="8" cy="15" r="4"></circle>
                             <path d="m11 12 9-9 2 2-3 3 2 2-3 3-2-2-2 2"></path>
                         </svg>
 
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Enter your password"
-                            autocomplete="current-password"
-                            required
-                            class="w-full min-w-0 bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400"
-                        >
+                        <input type="password" id="password" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required
+                            class="w-full min-w-0 bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400">
 
                         <span aria-hidden="true" class="shrink-0 text-lg text-slate-500">
                             ◉
@@ -201,40 +177,25 @@
 
                     <label for="remember" class="flex cursor-pointer items-center gap-2 text-slate-700">
 
-                        <input
-                            type="checkbox"
-                            id="remember"
-                            name="remember"
-                            class="h-4 w-4 accent-amber-400"
-                        >
+                        <input type="checkbox" id="remember" name="remember" class="h-4 w-4 accent-amber-400">
 
                         Remember me
 
                     </label>
 
-                    <a
-                        href="#forgot-password"
-                        class="font-semibold text-amber-700 underline-offset-4 transition-colors hover:text-amber-900 hover:underline"
-                    >
+                    <a href="#forgot-password"
+                        class="font-semibold text-amber-700 underline-offset-4 transition-colors hover:text-amber-900 hover:underline">
                         Forgot Password?
                     </a>
 
                 </div>
 
-                <button
-                    type="submit"
-                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
-                >
+                <button type="submit"
+                    class="flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 font-bold text-slate-950 transition-colors hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">
                     Sign In
 
-                    <svg
-                        aria-hidden="true"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-5 w-5"
-                    >
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="h-5 w-5">
                         <path d="M5 12h14"></path>
                         <path d="m13 6 6 6-6 6"></path>
                     </svg>
@@ -257,32 +218,24 @@
 
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
 
-                <button
-                    type="button"
-                    class="flex items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-800 transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
-                >
-                    <i class="fa-brands fa-google text-lg text-blue-600"
-                        aria-hidden="true"></i>
+                <button type="button"
+                    class="flex items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-800 transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">
+                    <i class="fa-brands fa-google text-lg text-blue-600" aria-hidden="true"></i>
 
                     Google
                 </button>
 
-                <button
-                    type="button"
-                    class="flex items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-800 transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
-                >
-                    <i class="fa-brands fa-apple text-xl text-slate-900"
-                        aria-hidden="true"></i>
+                <button type="button"
+                    class="flex items-center justify-center gap-3 rounded-full bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-800 transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500">
+                    <i class="fa-brands fa-apple text-xl text-slate-900" aria-hidden="true"></i>
 
                     Apple
                 </button>
 
             </div>
 
-            <a
-                href="#one-time-password"
-                class="mt-6 flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-semibold text-slate-800 transition-colors hover:text-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
-            >
+            <a href="#one-time-password"
+                class="mt-6 flex items-center justify-center gap-2 rounded-lg py-2 text-sm font-semibold text-slate-800 transition-colors hover:text-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">
                 <span aria-hidden="true" class="text-lg text-amber-500">
                     ▯
                 </span>
@@ -290,16 +243,15 @@
                 Sign in with One-Time Password (OTP)
             </a>
 
-            <div class="mt-10 flex flex-wrap items-center justify-between gap-3 rounded-full bg-slate-100 px-4 py-4 text-sm">
+            <div
+                class="mt-10 flex flex-wrap items-center justify-between gap-3 rounded-full bg-slate-100 px-4 py-4 text-sm">
 
                 <span class="text-slate-500">
                     Don't have an ENTRADA account?
                 </span>
 
-                <a
-                    href="Register.html"
-                    class="font-bold text-amber-800 transition-colors hover:text-amber-950 hover:underline"
-                >
+                <a href="Register.html"
+                    class="font-bold text-amber-800 transition-colors hover:text-amber-950 hover:underline">
                     Create account ↗
                 </a>
 
@@ -317,4 +269,5 @@
     </main>
 
 </body>
+
 </html>
