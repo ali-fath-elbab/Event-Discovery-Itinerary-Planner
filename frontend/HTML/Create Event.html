@@ -808,60 +808,100 @@
 
     </main>
 
-    <footer class="mt-10 border-t border-slate-200 bg-white">
+     <footer id="footer-section" class="w-full border-t border-gray-100 bg-white pt-16 pb-12 mt-16 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
 
-            <div>
-                <a href="Home.html" class="text-lg font-extrabold">
-                    <span class="text-amber-500">✦</span> ENTRADA
-                </a>
-
-                <p class="mt-3 max-w-xs text-sm leading-6 text-slate-500">
-                    Your destination for concerts, theatre, sports and live events.
-                </p>
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div
+              class="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-slate-950 font-black shadow-xs">
+              <i class="fa-solid fa-ticket text-sm"></i>
             </div>
-
-            <div>
-                <h2 class="font-bold">Explore</h2>
-
-                <ul class="mt-3 space-y-2 text-sm text-slate-500">
-                    <li><a href="All Events.html" class="hover:text-amber-700">All Events</a></li>
-                    <li><a href="DashBoard.html" class="hover:text-amber-700">Dashboard</a></li>
-                    <li><a href="Profile.html" class="hover:text-amber-700">Profile</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h2 class="font-bold">Organizer</h2>
-
-                <ul class="mt-3 space-y-2 text-sm text-slate-500">
-                    <li><a href="Create Event.html" class="hover:text-amber-700">Create Event</a></li>
-                    <li><a href="#help" class="hover:text-amber-700">Help Center</a></li>
-                    <li><a href="#support" class="hover:text-amber-700">Contact Support</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h2 class="font-bold">Need some help?</h2>
-
-                <p class="mt-3 text-sm leading-6 text-slate-500">
-                    Contact our team for assistance with your event.
-                </p>
-
-                <a href="mailto:support@entrada.example"
-                    class="mt-3 inline-block font-semibold text-amber-800 hover:underline">
-                    Email Support
-                </a>
-            </div>
-
+            <span class="text-lg font-extrabold tracking-tight text-slate-950">ENTRADA</span>
+          </div>
+          <p class="text-xs text-gray-500 leading-relaxed max-w-sm">
+            Your premier ticketing destination for live concerts, theater, sports, and cultural entertainment.
+          </p>
         </div>
 
-        <div class="border-t border-slate-200 px-4 py-4 text-center text-xs text-slate-500">
-            © ENTRADA — Event Discovery &amp; Itinerary Planner
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Tickets on Sale</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">All Tickets on Sale</a></li>
+            <li><a href="All Events.html" class="hover:text-slate-950 transition">Hot Events</a></li>
+          </ul>
         </div>
 
-    </footer>
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase">Company</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#" class="hover:text-slate-950 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Contact Us</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Careers</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Policies</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-slate-950 transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-4">
+          <div class="p-5 rounded-2xl bg-gray-50/80 border border-gray-100">
+            <h4 class="font-bold text-slate-900 text-xs tracking-wider uppercase mb-1">Need some help?</h4>
+            <p class="text-xs text-gray-500 mb-4">Contact our team anytime for dedicated ticket assistance.</p>
+
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <a href="tel:16826"
+                class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-phone text-emerald-600"></i>
+                <span>Call Center</span>
+              </a>
+              <a href="#"
+                class="px-3.5 py-2 rounded-xl bg-white border border-gray-200 hover:border-gray-300 text-slate-800 font-semibold text-xs flex items-center gap-2 shadow-2xs transition">
+                <i class="fa-solid fa-comments text-amber-600"></i>
+                <span>Live Chat</span>
+              </a>
+            </div>
+
+            <div class="flex items-center gap-2 pt-2 border-t border-gray-200/60">
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Website">
+                <i class="fa-solid fa-globe text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Instagram">
+                <i class="fa-brands fa-instagram text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="TikTok">
+                <i class="fa-brands fa-tiktok text-xs"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 rounded-full border border-gray-200 bg-white hover:bg-gray-100 flex items-center justify-center text-gray-600 transition"
+                aria-label="Facebook">
+                <i class="fa-brands fa-facebook text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <p>© ENTRADA 2026 - All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-700 transition">Privacy</a>
+          <a href="#" class="hover:text-slate-700 transition">Terms</a>
+          <a href="#" class="hover:text-slate-700 transition">Support</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 

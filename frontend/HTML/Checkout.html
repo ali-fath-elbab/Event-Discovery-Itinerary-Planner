@@ -143,13 +143,7 @@
                             </div>
                         </nav>
                         <!-- Dynamic Countdown Reservation Pill -->
-                        <div
-                            class="flex items-center gap-2.5 px-4 py-2 rounded-full bg-status-limited/10 text-status-limited font-label-md text-label-md self-start lg:self-auto flex-shrink-0 shadow-sm">
-                            <span class="material-symbols-outlined text-[18px] animate-pulse">timer</span>
-                            <span>Tickets reserved for <span class="font-mono font-bold"
-                                    id="checkout-timer">09:45</span>
-                                minutes</span>
-                        </div>
+                     
                     </div>
                 </div>
             </section>
@@ -159,28 +153,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
                         <!-- Left Column: Checkout & Billing Configuration (7 Columns) -->
                         <div class="lg:col-span-7 flex flex-col gap-space-lg">
-                            <!-- Fast Checkout Banner -->
-                            <div
-                                class="p-space-md bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex items-center justify-between gap-space-md">
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center flex-shrink-0 text-on-primary-container">
-                                        <span class="material-symbols-outlined text-[20px]">bolt</span>
-                                    </div>
-                                    <div>
-                                        <p class="font-headline-sm text-headline-sm text-text-primary">Already have an
-                                            ENTRADA account?</p>
-                                        <p class="font-body-sm text-body-sm text-text-muted">Sign in now for 1-click
-                                            checkout and saved
-                                            guest preferences.</p>
-                                    </div>
-                                </div>
-                                <button
-                                    class="px-4 py-2 rounded-full bg-surface-subtle hover:bg-surface-variant font-label-sm text-label-sm text-text-primary transition-all flex-shrink-0 whitespace-nowrap"
-                                    type="button">
-                                    Sign In
-                                </button>
-                            </div>
+
                             <!-- Guest & Identification Form -->
                             <div
                                 class="p-space-lg bg-surface-card rounded-2xl shadow-[0_4px_20px_-2px_rgba(16,24,40,0.04)] flex flex-col gap-space-md">
@@ -501,7 +474,8 @@
                                         &amp; Conditions</a>, high-security gate entrance policies, and <a
                                         class="text-text-primary font-bold underline hover:text-primary"
                                         href="#">TicketsMarche Refund &amp;
-                                        Exchange Policy</a>. All sales for live shows at Teatro 90 are final unless
+                                        Exchange Policy</a>. All sales for live shows at El Arena, New Cairo are final
+                                    unless
                                     event rescheduling
                                     occurs.
                                 </label>
@@ -525,13 +499,14 @@
                                             <div class="flex items-center gap-1.5 mb-1 text-primary">
                                                 <span class="w-2 h-2 rounded-full bg-status-available"></span>
                                                 <span
-                                                    class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Teatro
-                                                    90 Music
+                                                    class="font-label-sm text-label-sm font-bold uppercase tracking-wider">20
+                                                    years of Ramy Sabry
                                                     Series</span>
                                             </div>
                                             <h3
                                                 class="font-headline-sm text-headline-sm text-text-primary font-extrabold truncate">
-                                                20 years of Ramy Sabry
+
+                                                El Arena, New Cairo
                                             </h3>
                                             <p
                                                 class="font-body-sm text-body-sm text-text-muted mt-1 flex items-center gap-1">
@@ -543,7 +518,7 @@
                                         <div
                                             class="flex items-center gap-1 text-text-muted font-body-sm text-body-sm mt-2">
                                             <span class="material-symbols-outlined text-[16px]">location_on</span>
-                                            <span class="truncate">Teatro 90, New Cairo, Egypt</span>
+                                            <span class="truncate">New Cairo, Egypt</span>
                                         </div>
                                     </div>
                                 </div>
@@ -679,113 +654,15 @@
                 </div>
             </section>
         </div>
-        <script>
-            (function initCheckoutTimer() {
-                let duration = 9 * 60 + 45;
-                const timerDisplay = document.getElementById('checkout-timer');
-
-                if (!timerDisplay) return;
-
-                const interval = setInterval(function () {
-                    let minutes = Math.floor(duration / 60);
-                    let seconds = duration % 60;
-
-                    minutes = minutes < 10 ? '0' + minutes : minutes;
-                    seconds = seconds < 10 ? '0' + seconds : seconds;
-
-                    timerDisplay.textContent = minutes + ':' + seconds;
-
-                    if (--duration < 0) {
-                        clearInterval(interval);
-                        timerDisplay.textContent = '00:00';
-                    }
-                }, 1000);
-            })();
-
-            const paymentButtons = document.querySelectorAll('.payment-btn');
-            const paymentPanels = ['card-panel', 'fawry-panel', 'wallet-panel', 'installments-panel'];
-
-            paymentButtons.forEach((button) => {
-                button.addEventListener('click', function () {
-                    paymentButtons.forEach((item) => {
-                        item.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-card', 'shadow-sm');
-                        item.classList.add('bg-surface-subtle');
-
-                        const icon = item.querySelector('.material-symbols-outlined');
-                        if (icon) {
-                            icon.classList.remove('text-primary');
-                            icon.classList.add('text-text-muted');
-                        }
-                    });
-
-                    this.classList.remove('bg-surface-subtle');
-                    this.classList.add('ring-2', 'ring-primary-container', 'bg-surface-card', 'shadow-sm');
-
-                    const activeIcon = this.querySelector('.material-symbols-outlined');
-                    if (activeIcon) {
-                        activeIcon.classList.remove('text-text-muted');
-                        activeIcon.classList.add('text-primary');
-                    }
-
-                    paymentPanels.forEach((panelId) => {
-                        const panel = document.getElementById(panelId);
-                        if (panel) panel.classList.add('hidden');
-                    });
-
-                    const target = this.getAttribute('data-payment');
-                    const targetPanel = {
-                        card: 'card-panel',
-                        fawry: 'fawry-panel',
-                        wallet: 'wallet-panel',
-                        installments: 'installments-panel'
-                    }[target];
-
-                    if (targetPanel) {
-                        const panel = document.getElementById(targetPanel);
-                        if (panel) panel.classList.remove('hidden');
-                    }
-                });
-            });
-
-            const applyPromoBtn = document.getElementById('apply-promo');
-            const promoInput = document.getElementById('promo-input');
-            const promoSuccess = document.getElementById('promo-success');
-
-            if (applyPromoBtn && promoInput && promoSuccess) {
-                applyPromoBtn.addEventListener('click', function () {
-                    if (promoInput.value.trim() !== '') {
-                        promoSuccess.classList.remove('hidden');
-                        promoInput.disabled = true;
-                        applyPromoBtn.textContent = 'Applied';
-                        applyPromoBtn.disabled = true;
-                    }
-                });
-            }
-
-            const payBtn = document.getElementById('pay-button');
-            if (payBtn) {
-                payBtn.addEventListener('click', function () {
-                    this.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> Processing Reservation...';
-                    this.classList.add('opacity-80', 'pointer-events-none');
-
-                    setTimeout(() => {
-                        this.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> Booking Confirmed!';
-                        this.classList.remove('bg-primary-container');
-                        this.classList.add('bg-status-available', 'text-on-primary');
-                    }, 1500);
-                });
-            }
-        </script>
     </main>
     <footer class="w-full bg-surface-card shadow-[0_-1px_8px_rgba(0,0,0,0.03)]">
         <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-2xl">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl">
                 <div class="flex flex-col gap-space-sm">
-                    <div class="flex items-center gap-space-sm mb-space-xs"><img alt="ENTRADA Wordmark Logo"
-                            class="h-7 w-auto object-contain"
-                            src="https://lh3.googleusercontent.com/aida/AEtjO1X_gyeBe1oeq-6KPkHxcwFH2kQMQm_Xs8jGQZ6hRw2iYLSP8533TghA0h7y4DWWkW-pfjR7pBRq6OHqwJ81RJmy-YnuuPXiTZy2X8XKRl4peROGnXANLrj_2w5GdV36F_lr0otSA1pP-txY8EbBbLmi9Xyw1f4mxEgJJ0pxYHxnZii8jBFUpx06wfiR6MJDEoW8PRHc6BVX7X8ri3r3VUGK-EIBPrScTbW4ySxhO0a8nl5HZaw7Nc64Xg" /><span
-                            class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-extrabold">ENTRADA</span>
+                    <div class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-extrabold">ENTRADA</span>
+                    
                     </div>
+                
                     <p class="font-body-sm text-body-sm text-text-muted max-w-xs leading-relaxed">Your premier ticketing
                         destination for live concerts, theater, sports, and cultural entertainment.</p>
                 </div>
