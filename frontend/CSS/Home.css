@@ -29,7 +29,6 @@ button {
     color: #111827;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
